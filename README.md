@@ -15,7 +15,7 @@ The only purpose of this code is to serve as _proof of concept_, demo and base o
 ### with docker
 
 * `docker build -t posib/posib-legacy .`
-* `docker run -p 80:80 -v $PWD:/var/www/html posib/posib-legacy`
+* `docker run -p 80:80 posib/posib-legacy`
 
 ## Documentation
 
