@@ -1,0 +1,106 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-editor.less
+ */
+
+#posib {
+	.editorStyles() {
+		.posib-editor {
+			width: 360px;
+			position: relative;
+			.posib-editor-toolbar {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 10;
+				border: 1px solid #ccc;
+				background: silver;
+				padding: 4px;
+				height: 22px;
+				width: 350px;
+				#posib > .border-radius( 3px 3px 0 0 );
+				#posib > #gradient > .vertical( #e5e5e5, #ddd );
+				.posib-editor-button-group {
+					margin: 0 10px 0 0;
+					display: inline-block;
+					border: 1px solid #bbb;
+					#posib > .border-radius( 2px );
+					#posib > .box-shadow( 0 -1px 1px rgba( 255, 255, 255, 0.5 ) );
+					a {
+						border-left: 1px solid #bbb;
+						display: inline-block;
+						float: left;
+						cursor: pointer;
+						width: 16px;
+						height: 16px;
+						padding: 2px;
+						margin: 0;
+						text-indent: -999em;
+						&.posib-editor-button-bold { background: #eee url( /posib/static/icons/edit-bold.png ) center no-repeat; }
+						&.posib-editor-button-italic { background: #eee url( /posib/static/icons/edit-italic.png ) center no-repeat; }
+						&.posib-editor-button-underline { background: #eee url( /posib/static/icons/edit-underline.png ) center no-repeat; }
+						&.posib-editor-button-ol { background: #eee url( /posib/static/icons/edit-list-order.png ) center no-repeat; }
+						&.posib-editor-button-ul { background: #eee url( /posib/static/icons/edit-list.png ) center no-repeat; }
+						&.posib-editor-button-indent { background: #eee url( /posib/static/icons/edit-indent.png ) center no-repeat; }
+						&.posib-editor-button-outdent { background: #eee url( /posib/static/icons/edit-outdent.png ) center no-repeat; }
+						&.posib-editor-button-removeformat { background: #eee url( /posib/static/icons/broom.png ) center no-repeat; }
+						&.posib-editor-button-link { background: #eee url( /posib/static/icons/chain.png ) center no-repeat; }
+						&.posib-editor-button-unlink { background: #eee url( /posib/static/icons/chain-unchain.png ) center no-repeat; }
+						&:hover { background-color: #f5f5f5; }
+						&:first-child { border: 0; }
+					}
+				}
+			}
+			.posib-editor-content {
+				position: relative;
+				z-index: 5;
+				padding: 35px 4px 4px;
+				#posib > #font > .sans-serif( 13px, normal, 18px );
+				color: #555;
+				border: 1px solid #ccc;
+				height: 100px;
+				overflow: auto;
+				#posib > .border-radius( 3px );
+				@transition: border linear .2s, box-shadow linear .2s;
+				#posib > .transition( @transition );
+				#posib > .box-shadow( inset 0 1px 3px rgba( 0, 0, 0, .1 ) );
+				&:focus {
+					outline: 0;
+					border-color: rgba( 82, 168, 236, .8 );
+					@shadow: inset 0 1px 3px rgba( 0, 0, 0, .1 ), 0 0 8px rgba( 82, 168, 236, .6 );
+					#posib > .box-shadow( @shadow );
+				}
+				// content
+				p { margin: 0 auto 5px; #posib > #font > .sans-serif( 13px, normal, 18px ); }
+				em, i { font-style: italic; }
+				strong, b { font-weight: bold; }
+				u { text-decoration: underline; }
+				ol { list-style: inside decimal; }
+				ul { list-style: inside disc; }
+				ol, ul {
+					margin: 5px auto;
+					li {
+						margin: 0 auto 5px; #posib > #font > .sans-serif( 13px, normal, 18px );
+					}
+				}
+			}
+		}
+		textarea#posib-content {
+			display: none;
+		}
+		div.posib-field-insert-link {
+			display: none;
+			margin: 0 auto 10px;
+			div.posib-field-insert-link-controls {
+				text-align: center;
+				a {
+					#posib > .btn();
+					margin: 0 5px 0 0;
+					&.posib-field-insert-link-confirm {
+						#posib > .btn-success();
+					}
+				}
+			}
+		}
+	}
+}

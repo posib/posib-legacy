@@ -1,0 +1,1 @@
+<?=$brick->getPropertyWhen( 'content', $iTime ); ?>

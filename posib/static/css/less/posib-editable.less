@@ -1,0 +1,132 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-editable.less
+ */
+
+.posib-admin {
+	position: relative;
+	.posib-backdrop {
+		display: none;
+		background: rgba(0,0,0,0.8);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10000;
+		&.posib-loader {
+			background: rgba(0,0,0,0.8) url( /posib/static/images/loader.gif ) center no-repeat;
+		}
+	}
+
+	.posib-editable-hover {
+		background: rgba( 200, 0, 0, 0.25 );
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		z-index: 15000;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		display: none;
+		text-align: center;
+		vertical-align: middle;
+		#posib > .border-radius( 3px );
+		div {
+			position: absolute;
+			width: 240px;
+			height: 90px;
+			left: 50%;
+			top: 50%;
+			margin: -10px 0 0 -120px;
+			background: transparent url( /posib/static/images/editable-zone.png ) center no-repeat;
+			> strong {
+				position: absolute;
+				top: 25px;
+				left: 20px;
+				display: block;
+				width: 200px;
+				height: 25px;
+				padding: 0 0 0 23px;
+				text-align: left;
+				#posib > #font > .sans-serif( 18px, normal, 28px );
+				text-shadow: 0 1px 1px rgba(255,255,255,.9);
+				color: #666;
+				&.short { background: transparent url( /posib/static/icons/edit-small-caps.png ) center left no-repeat; }
+				&.rich { background: transparent url( /posib/static/icons/edit-alignment.png ) center left no-repeat; }
+				&.image { background: transparent url( /posib/static/icons/image.png ) center left no-repeat; }
+				&.form { background: transparent url( /posib/static/icons/application-form.png ) center left no-repeat; }
+				&.map { background: transparent url( /posib/static/icons/map-pin.png ) center left no-repeat; }
+				&.time { background: transparent url( /posib/static/icons/calendar-month.png ) center left no-repeat; }
+				&.file { background: transparent url( /posib/static/icons/drive-download.png ) center left no-repeat; }
+			}
+			> small {
+				display: none;
+			}
+			> span {
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				display: block;
+				width: 220px;
+				height: 25px;
+				text-align: center;
+				#posib > #font > .sans-serif( 13px, normal, 25px );
+				color: white;
+				text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+			}
+			&.list {
+				height: 115px;
+				background: transparent url( /posib/static/images/editable-list-zone.png ) center no-repeat;
+				> small {
+					position: absolute;
+					bottom: 35px;
+					left: 20px;
+					display: block;
+					width: 220px;
+					height: 25px;
+					text-align: left;
+					#posib > #font > .sans-serif( 13px, normal, 25px );
+					color: #222;
+					text-shadow: 0 1px 0 rgba( 255, 255, 255, .75 );
+					padding: 1px 0 0 23px;
+					background: transparent url( /posib/static/icons/category.png ) center left no-repeat;
+				}
+			}
+		}
+	}
+	.tooltip {
+		.posib-reset;
+		position: absolute;
+		z-index: 50000;
+		display: block;
+		visibility: visible;
+		padding: 5px;
+		font-size: 11px;
+		#posib > .opacity(0);
+		&.in     { #posib > .opacity(80); }
+		&.top    { margin-top:  -2px; }
+		&.right  { margin-left:  2px; }
+		&.bottom { margin-top:   2px; }
+		&.left   { margin-left: -2px; }
+		&.top .tooltip-arrow    { #posib > #popoverArrow > .top(); }
+		&.left .tooltip-arrow   { #posib > #popoverArrow > .left(); }
+		&.bottom .tooltip-arrow { #posib > #popoverArrow > .bottom(); }
+		&.right .tooltip-arrow  { #posib > #popoverArrow > .right(); }
+	}
+	.tooltip-inner {
+		max-width: 200px;
+		padding: 3px 8px;
+		color: white;
+		#posib > #font > .sans-serif( 11px, normal, 13px );
+		text-align: center;
+		text-decoration: none;
+		background-color: black;
+		#posib > .border-radius(4px);
+	}
+	.tooltip-arrow {
+		position: absolute;
+		width: 0;
+		height: 0;
+	}
+}

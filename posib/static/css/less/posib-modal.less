@@ -1,0 +1,139 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-modal.less
+ */
+
+.posib-modal {
+	position: fixed;
+	z-index: 20000;
+	background: white;
+	top: 50%;
+	left: 50%;
+	width: 560px;
+	margin: -250px 0 0 -280px;
+	#posib > .border-radius( 6px );
+	#posib > .box-shadow( 0 3px 7px rgba( 0, 0, 0, 0.3 ) );
+	#posib > #font > .sans-serif( 13px, normal, 18px );
+	form {
+		header {
+			border-bottom: 1px solid #eee;
+			padding: 10px 20px;
+			a.posib-modal-close {
+				float: right;
+				color: #404040;
+				#posib > #font > .sans-serif( 20px, bold, 13.5px );
+				text-shadow: 0 1px 0 white;
+				text-decoration: none;
+				margin-top: 7px;
+			}
+			h1 {
+				#posib > #font > .sans-serif( 18px, normal, 36px );
+				color: #444;
+				img {
+					vertical-align: -1px;
+					margin: 0 5px 0 0;
+				}
+			}
+		}
+		fieldset {
+			padding: 30px 15px 15px;
+			max-height: 350px;
+			overflow: auto;
+			border-bottom: 1px solid #ddd;
+			background: white;
+			#posib > .formStyles();
+			#posib > .editorStyles();
+			#posib > .editImageStyles();
+			#posib > .editMapStyles();
+			#posib > .editFileStyles();
+			#posib > .editTimeStyles();
+			#posib > .historyManagerStyles();
+			#posib > .rootStyles();
+			#posib > .aboutStyles();
+			#posib > .listStyles();
+			#posib > .clearfix();
+		}
+		section.posib-modals-tools {
+			background: #eee;
+			border-top: 1px solid white;
+			border-bottom: 1px solid #ddd;
+			padding: 6px 15px;
+			#posib > .clearfix();
+			position: relative;
+			a {
+				display: inline-block;
+				text-decoration: none;
+				font-size: 13px;
+				img {
+					vertical-align: -3px; margin-right: 5px;
+				}
+				color: #666;
+				padding: 6px 10px;
+				#posib > .border-radius( 5px );
+				&:hover {
+					background: white;
+					#posib > .box-shadow( inset 0 0 5px rgba(0,0,0,.25) );
+				}
+				&.posib-modal-list {
+					position: absolute;
+					top: 6px;
+					right: 15px;
+				}
+			}
+		}
+		footer {
+			position: relative;
+			min-height: 30px;
+			border-top: 1px solid white;
+			padding: 5px 15px;
+			#posib > .border-radius( 0 0 6px 6px );
+			#posib > #gradient > .vertical( #ddd, #ccc );
+			position: relative;
+			.posib-branding {
+				width: 220px;
+				height: 56px;
+				a {
+					display: block;
+					width: 220px;
+					height: 56px;
+					text-indent: -999em;
+				}
+				&#brand_posib {
+					a {
+						background: transparent url( /posib/static/images/branding-posib.png ) center left no-repeat;
+					}
+				}
+				&#brand_minibos {
+					a {
+						background: transparent url( /posib/static/images/branding-minibos.png ) center left no-repeat;
+					}
+				}
+			}
+			.posib-controls {
+				position: absolute;
+				top: 50%;
+				right: 15px;
+				margin: -14px 0 0;
+				a, input {
+					float: right;
+					margin-left: 15px;
+					#posib > .btn();
+				}
+				input[type="submit"] {
+					#posib > .btn-success();
+				}
+			}
+		}
+	}
+	&.posib-modal-map-edit, &.posib-modal-time-edit, &.posib-modal-restore, &.posib-modal-sitemap {
+		width: 720px;
+		margin: -300px 0 0 -360px;
+		form {
+			fieldset {
+				max-height: 450px;
+				overflow: auto;
+			}
+		}
+	}
+
+}

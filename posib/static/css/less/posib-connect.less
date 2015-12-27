@@ -1,0 +1,57 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-connect.less
+ */
+
+.posib-connect {
+	position: relative;
+	.posib-backdrop {
+		background: rgba(0,0,0,0.8);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 10000;
+		&.posib-loader {
+			background: rgba(0,0,0,0.8) url( /posib/static/images/loader.gif ) center no-repeat;
+		}
+	}
+
+	#posib-ie-warning {
+		display: block;
+		position: absolute;
+		z-index: 15000;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 20px 0;
+		border-bottom: 1px solid #ee5f5b;
+		background: #bd362f;
+		color: white;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		div {
+			width: 50%;
+			margin: 0 auto;
+			h4 {
+				font-weight: bold;
+				font-size: 24px;
+				margin: 25px auto 30px;
+				text-align: center;
+			}
+			p {
+				font-size: 13px;
+				line-height: 1.5;
+				margin: 0 auto 20px;
+				a {
+					color: lighten( #b94a48, 25% );
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+						color: lighten( #b94a48, 15% );
+					}
+				}
+			}
+		}
+	}
+}

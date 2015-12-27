@@ -1,0 +1,126 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-history-manager.less
+ */
+
+#posib {
+	.historyManagerStyles() {
+		dl.history-manager {
+			border-left: 3px solid silver;
+			margin: 30px 0 10px 40px;
+			padding: 20px 0 40px 20px;
+			position: relative;
+			&:before {
+				content: "maintenant";
+				padding: 2px 0;
+				#posib > .border-radius( 3px );
+				#posib > #font > .sans-serif( 12px, bold, 18px );
+				text-shadow: 0 -1px 1px gray;
+				color: white;
+				background: silver;
+				width: 74px;
+				text-align: center;
+				position: absolute;
+				left: -37px;
+				top: -20px;
+			}
+			&:after {
+				content: "";
+				display: block;
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				bottom: 0;
+				left: -15px;
+				background: transparent url( /posib/static/images/fader.png ) top left;
+			}
+			dt {
+				display: block;
+				#posib > .border-radius( 25px 0 0 25px );
+				background: silver;
+				text-align: center;
+				padding: 2px 5px 2px 20px;
+				border: 3px solid white;
+				border-right: 0;
+				width: 100px;
+				position: relative;
+				left: -35px;
+				span {
+					text-shadow: 0 -1px 1px gray;
+					color: white;
+					#posib > #font > .sans-serif( 12px, bold, 18px );
+				}
+				&:after {
+					content: "";
+					display: block;
+					width: 9px;
+					height: 9px;
+					background: white;
+					#posib > .border-radius( 10px );
+					position: absolute;
+					top: 6px;
+					left: 6px;
+					#posib > .box-shadow( inset 0 1px 1px gray );
+				}
+			}
+			dd {
+				border: 3px solid silver;
+				padding: 5px;
+				#posib > .border-radius( 0 5px 5px 5px );
+				position: relative;
+				top: -25px;
+				left: 92px;
+				width: 500px;
+				min-height: 30px;
+				margin: 0 0 10px;
+				background: white;
+				div.posib-history-content {
+					margin: 5px 5px 0;
+					#posib > .clearfix();
+					.posib-main-image {
+						float: left;
+						width: 140px;
+						h4 {
+							text-transform: uppercase;
+							margin: 0 auto 10px;
+							#posib > #font > .sans-serif( 11px, bold, 15px );
+						}
+						.posib-image-box {
+							#posib > .posib-image-box;
+							width: 120px;
+							height: 120px;
+						}
+					}
+					.posib-gallery-images {
+						h4 {
+							text-transform: uppercase;
+							margin: 0 auto 10px;
+							#posib > #font > .sans-serif( 11px, bold, 15px );
+						}
+						ul {
+							li.posib-image-box {
+								#posib > .posib-image-box;
+								width: 75px;
+								height: 75px;
+								float: left;
+								margin: 0 10px 10px 0;
+							}
+						}
+					}
+					.posib-restored-map {
+						height: 150px;
+					}
+				}
+				div.posib-history-tools {
+					text-align: right;
+					margin: 10px auto 5px;
+					padding: 10px 7px 0;
+					border-top: 1px dotted silver;
+					a {
+						#posib > .btn();
+					}
+				}
+			}
+		}
+	}
+}

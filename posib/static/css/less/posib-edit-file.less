@@ -1,0 +1,49 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-file.less
+ */
+
+#posib {
+    .editFileStyles() {
+        padding: 15px 15px 5px;
+        .posib-input {
+            #posib-file-input {
+                display: none;
+            }
+            #posib-file-fileinfos {
+                margin: 0 0 5px;
+                width: 270px;
+                border: 1px solid silver;
+                #posib > .border-radius( 3px );
+                padding: 2px 4px;
+                background: #f5f5f5 url( /posib/static/icons/document-text.png ) 4px 50% no-repeat;
+                #posib > .clearfix();
+                &.empty {
+                    display: none;
+                }
+                strong {
+                    display: inline-block;
+                    #posib > #font > .sans-serif( 12px, bold, 16px );
+                    margin: 5px 0 0 20px;
+                    float: left;
+                    width: 200px;
+                    span {
+                        color: gray;
+                        font-weight: normal;
+                    }
+                }
+                small {
+                    #posib > #font > .monospace( 10px, normal, 16px );
+                    float: right;
+                    text-align: right;
+                    height: 16px;
+                    margin: 6px 2px 0 0;
+                }
+            }
+            #posib-file-button {
+                #posib > .btn-info();
+                width: 258px;
+            }
+        }
+    }
+}

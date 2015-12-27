@@ -1,0 +1,742 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-mixins.less
+ */
+
+#posib {
+	// clearfix
+	.clearfix() {
+		*zoom: 1;
+		&:before,
+		&:after {
+			display: table;
+			content: "";
+		}
+		&:after {
+			clear: both;
+		}
+	}
+
+	// Webkit-style focus
+	// ------------------
+	.tab-focus() {
+	  // Default
+	  outline: thin dotted;
+	  // Webkit
+	  outline: 5px auto -webkit-focus-ring-color;
+	  outline-offset: -2px;
+	}
+
+	// Center-align a block level element
+	// ----------------------------------
+	.center-block() {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	// IE7 inline-block
+	// ----------------
+	.ie7-inline-block() {
+	  *display: inline; /* IE7 inline-block hack */
+	  *zoom: 1;
+	}
+
+	// IE7 likes to collapse whitespace on either side of the inline-block elements.
+	// Ems because we're attempting to match the width of a space character. Left
+	// version is for form buttons, which typically come after other elements, and
+	// right version is for icons, which come before. Applying both is ok, but it will
+	// mean that space between those elements will be .6em (~2 space characters) in IE7,
+	// instead of the 1 space in other browsers.
+	.ie7-restore-left-whitespace() {
+	  *margin-left: .3em;
+
+	  &:first-child {
+	    *margin-left: 0;
+	  }
+	}
+
+	.ie7-restore-right-whitespace() {
+	  *margin-right: .3em;
+
+	  &:last-child {
+	    *margin-left: 0;
+	  }
+	}
+
+	// Sizing shortcuts
+	// -------------------------
+	.size(@height: 5px, @width: 5px) {
+	  width: @width;
+	  height: @height;
+	}
+	.square(@size: 5px) {
+	  #posib > .size(@size, @size);
+	}
+
+	// Placeholder text
+	// -------------------------
+	.placeholder(@color: @placeholderText) {
+	  :-moz-placeholder {
+	    color: @color;
+	  }
+	  ::-webkit-input-placeholder {
+	    color: @color;
+	  }
+	}
+
+	// CSS3 PROPERTIES
+	// --------------------------------------------------
+
+	// Border Radius
+	.border-radius(@radius: 5px) {
+	  -webkit-border-radius: @radius;
+	     -moz-border-radius: @radius;
+	          border-radius: @radius;
+	}
+
+	// Drop shadows
+	.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+	  -webkit-box-shadow: @shadow;
+	     -moz-box-shadow: @shadow;
+	          box-shadow: @shadow;
+	}
+
+	// Transitions
+	.transition(@transition) {
+	  -webkit-transition: @transition;
+	     -moz-transition: @transition;
+	      -ms-transition: @transition;
+	       -o-transition: @transition;
+	          transition: @transition;
+	}
+
+	// Transformations
+	.rotate(@degrees) {
+	  -webkit-transform: rotate(@degrees);
+	     -moz-transform: rotate(@degrees);
+	      -ms-transform: rotate(@degrees);
+	       -o-transform: rotate(@degrees);
+	          transform: rotate(@degrees);
+	}
+	.scale(@ratio) {
+	  -webkit-transform: scale(@ratio);
+	     -moz-transform: scale(@ratio);
+	      -ms-transform: scale(@ratio);
+	       -o-transform: scale(@ratio);
+	          transform: scale(@ratio);
+	}
+	.translate(@x: 0, @y: 0) {
+	  -webkit-transform: translate(@x, @y);
+	     -moz-transform: translate(@x, @y);
+	      -ms-transform: translate(@x, @y);
+	       -o-transform: translate(@x, @y);
+	          transform: translate(@x, @y);
+	}
+	.skew(@x: 0, @y: 0) {
+	  -webkit-transform: translate(@x, @y);
+	     -moz-transform: translate(@x, @y);
+	      -ms-transform: translate(@x, @y);
+	       -o-transform: translate(@x, @y);
+	          transform: translate(@x, @y);
+	}
+	.skew(@x: 0, @y: 0) {
+	  -webkit-transform: skew(@x, @y);
+	     -moz-transform: skew(@x, @y);
+	      -ms-transform: skew(@x, @y);
+	       -o-transform: skew(@x, @y);
+	          transform: skew(@x, @y);
+	}
+
+	// Background clipping
+	// Heads up: FF 3.6 and under need "padding" instead of "padding-box"
+	.background-clip(@clip) {
+	  -webkit-background-clip: @clip;
+	     -moz-background-clip: @clip;
+	          background-clip: @clip;
+	}
+
+	// Background sizing
+	.background-size(@size){
+	  -webkit-background-size: @size;
+	     -moz-background-size: @size;
+	       -o-background-size: @size;
+	          background-size: @size;
+	}
+
+
+	// Box sizing
+	.box-sizing(@boxmodel) {
+	  -webkit-box-sizing: @boxmodel;
+	     -moz-box-sizing: @boxmodel;
+	          box-sizing: @boxmodel;
+	}
+
+	// User select
+	// For selecting text on the page
+	.user-select(@select) {
+	  -webkit-user-select: @select;
+	     -moz-user-select: @select;
+	       -o-user-select: @select;
+	          user-select: @select;
+	}
+
+	// Resize anything
+	.resizable(@direction: both) {
+	  resize: @direction; // Options: horizontal, vertical, both
+	  overflow: auto; // Safari fix
+	}
+
+	// CSS3 Content Columns
+	.content-columns(@columnCount, @columnGap: @gridColumnGutter) {
+	  -webkit-column-count: @columnCount;
+	     -moz-column-count: @columnCount;
+	          column-count: @columnCount;
+	  -webkit-column-gap: @columnGap;
+	     -moz-column-gap: @columnGap;
+	          column-gap: @columnGap;
+	}
+
+	// Opacity
+	.opacity(@opacity: 100) {
+	  opacity: @opacity / 100;
+	   filter: e(%("alpha(opacity=%d)", @opacity));
+	}
+
+	// Gradient Bar Colors for buttons and alerts
+	.gradientBar(@primaryColor, @secondaryColor) {
+		#posib > #gradient > .vertical(@primaryColor, @secondaryColor);
+		border-color: @secondaryColor @secondaryColor darken(@secondaryColor, 15%);
+		border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) fadein(rgba(0,0,0,.1), 15%);
+	}
+	#gradient {
+		.horizontal(@startColor: #555, @endColor: #333) {
+			background-color: @endColor;
+			background-image: -moz-linear-gradient(left, @startColor, @endColor); // FF 3.6+
+			background-image: -ms-linear-gradient(left, @startColor, @endColor); // IE10
+			background-image: -webkit-gradient(linear, 0 0, 100% 0, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+			background-image: -webkit-linear-gradient(left, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+			background-image: -o-linear-gradient(left, @startColor, @endColor); // Opera 11.10
+			background-image: linear-gradient(left, @startColor, @endColor); // Le standard
+			background-repeat: repeat-x;
+			filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=1)",@startColor,@endColor)); // IE9 and down
+		}
+		.vertical(@startColor: #555, @endColor: #333) {
+			background-color: mix(@startColor, @endColor, 60%);
+			background-image: -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+			background-image: -ms-linear-gradient(top, @startColor, @endColor); // IE10
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+			background-image: -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+			background-image: -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+			background-image: linear-gradient(top, @startColor, @endColor); // The standard
+			background-repeat: repeat-x;
+			filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down
+		}
+		.directional(@startColor: #555, @endColor: #333, @deg: 45deg) {
+			background-color: @endColor;
+			background-repeat: repeat-x;
+			background-image: -moz-linear-gradient(@deg, @startColor, @endColor); // FF 3.6+
+			background-image: -ms-linear-gradient(@deg, @startColor, @endColor); // IE10
+			background-image: -webkit-linear-gradient(@deg, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+			background-image: -o-linear-gradient(@deg, @startColor, @endColor); // Opera 11.10
+			background-image: linear-gradient(@deg, @startColor, @endColor); // The standard
+		}
+		.vertical-three-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+			background-color: mix(@midColor, @endColor, 80%);
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), color-stop(@colorStop, @midColor), to(@endColor));
+			background-image: -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+			background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+			background-image: -ms-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+			background-image: -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+			background-image: linear-gradient(@startColor, @midColor @colorStop, @endColor);
+			background-repeat: no-repeat;
+			filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down, gets no color-stop at all for proper fallback
+		}
+		.radial(@innerColor: #555, @outerColor: #333)  {
+			background-color: @outerColor;
+			background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor));
+			background-image: -webkit-radial-gradient(circle, @innerColor, @outerColor);
+			background-image: -moz-radial-gradient(circle, @innerColor, @outerColor);
+			background-image: -ms-radial-gradient(circle, @innerColor, @outerColor);
+			background-repeat: no-repeat;
+			// Opera cannot do radial gradients yet
+		}
+		.striped(@color, @angle: -45deg) {
+			background-color: @color;
+			background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+			background-image: -webkit-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+			background-image: -moz-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+			background-image: -ms-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+			background-image: -o-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+			background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+		}
+	}
+	// Reset filters for IE
+	.reset-filter() {
+		filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+	}
+
+	// FONTS
+	// --------------------------------------------------
+
+	#font {
+	  #family {
+	    .serif() {
+	      font-family: Georgia, "Times New Roman", Times, serif;
+	    }
+	    .sans-serif() {
+	      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	    }
+	    .monospace() {
+	      font-family: Menlo, Monaco, "Courier New", monospace;
+	    }
+	  }
+	  .shorthand(@size: 1em, @weight: normal, @lineHeight: 1.5 ) {
+	    font-size: @size;
+	    font-weight: @weight;
+	    line-height: @lineHeight;
+	  }
+	  .serif(@size: 1em, @weight: normal, @lineHeight: 1.5 ) {
+	    #font > #family > .serif;
+	    #font > .shorthand(@size, @weight, @lineHeight);
+	  }
+	  .sans-serif(@size: 1em, @weight: normal, @lineHeight: 1.5 ) {
+	    #font > #family > .sans-serif;
+	    #font > .shorthand(@size, @weight, @lineHeight);
+	  }
+	  .monospace(@size: 1em, @weight: normal, @lineHeight: 1.5 ) {
+	    #font > #family > .monospace;
+	    #font > .shorthand(@size, @weight, @lineHeight);
+	  }
+	}
+
+	// Mixin for generating button backgrounds
+	// ---------------------------------------
+	.buttonBackground(@startColor, @endColor) {
+	  // gradientBar will set the background to a pleasing blend of these, to support IE<=9
+	  #posib > .gradientBar(@startColor, @endColor);
+	  #posib > .reset-filter();
+
+	  // in these cases the gradient won't cover the background, so we override
+	  &:hover, &:active, &.active, &.disabled, &[disabled] {
+	    background-color: @endColor;
+	  }
+
+	  // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
+	  &:active,
+	  &.active {
+	    background-color: darken(@endColor, 10%) e("\9");
+	  }
+	}
+
+	// ALERTS
+	// --------------------------------------
+	.alert {
+		padding: 8px 35px 8px 14px;
+		margin-bottom: 18px;
+		text-shadow: 0 1px 0 rgba( 255, 255, 255, .5 );
+		background-color: #fcf8e3;
+		border: 1px solid darken( spin( #fcf8e3, -10 ), 3% );
+		#posib > .border-radius( 4px );
+		color: #c09853;
+	}
+	.alert .posib-alert-heading {
+		font-weight: bold
+		margin: 0 auto 3px;
+	}
+
+	// Adjust close link position
+	.alert .close {
+		position: relative;
+		top: -2px;
+		right: -21px;
+		line-height: 18px;
+	}
+
+	// Alternate styles
+	// ----------------
+
+	.alert-success {
+		background-color: #dff0d8;
+		border-color: darken( spin( #dff0d8, -10 ), 5% );
+	}
+	.alert-success, .alert-success .posib-alert-heading {
+		color: #468847;
+	}
+	.alert-danger, .alert-error {
+		background-color: #f2dede;
+		border-color: darken( spin( #f2dede, -10 ), 3% );
+	}
+	.alert-danger, .alert-error, .alert-danger .posib-alert-heading, .alert-error .posib-alert-heading {
+		color: #b94a48;
+	}
+	.alert-info {
+		background-color: #d9edf7;
+		border-color: darken( spin( #d9edf7, -10 ), 7% );
+	}
+	.alert-info, .alert-info .posib-alert-heading {
+		color: #3a87ad;
+	}
+
+	// BUTTONS
+	// --------------------------------------
+	.btn( @baseFontSize: 13px, @baseLineHeight: 18px, @textColor: #333, @bcgColor: #fff ) {
+		display: inline-block;
+		padding: 4px 10px 4px;
+		font-size: @baseFontSize;
+		line-height: @baseLineHeight;
+		color: @textColor;
+		text-align: center;
+		text-shadow: 0 1px 1px rgba(255,255,255,.75);
+		text-decoration: none;
+		#gradient > .vertical-three-colors(@bcgColor, @bcgColor, 25%, darken(@bcgColor, 10%)); // Don't use .gradientbar() here since it does a three-color gradient
+		border: 1px solid #ccc;
+		border-bottom-color: #bbb;
+		#posib > .border-radius(4px);
+		@shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+		#posib > .box-shadow(@shadow);
+		cursor: pointer;
+		// Give IE7 some love
+		#posib > .ie7-restore-left-whitespace();
+		&:hover {
+			color: @textColor;
+			text-decoration: none;
+			background-color: darken(@bcgColor, 10%);
+			background-position: 0 -15px;
+			#posib > .transition(background-position .1s linear);
+		}
+		&:focus {
+			#posib > .tab-focus();
+		}
+		&.active, &:active {
+			background-image: none;
+			@shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+			#posib > .box-shadow(@shadow);
+			background-color: darken(@bcgColor, 10%);
+			background-color: darken(@bcgColor, 15%) e("\9");
+			color: rgba(0,0,0,.5);
+			outline: 0;
+		}
+		&.disabled, &[disabled] {
+			cursor: default;
+			background-image: none;
+			background-color: darken(@bcgColor, 10%);
+			#posib > .opacity(65);
+			#posib > .box-shadow(none);
+		}
+	}
+
+	.btn-primary( @baseFontSize: 13px, @baseLineHeight: 18px, @textColor: #333, @bcgColor: #fff ) {
+		#posib > .btn( @baseFontSize, @baseLineHeight, #fff );
+		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		#posib > .buttonBackground( #08c, spin( #08c, 20 ) );
+		&.active { color: rgba(255,255,255,.75); }
+	}
+
+	.btn-warning( @baseFontSize: 13px, @baseLineHeight: 18px, @textColor: #333, @bcgColor: #fff ) {
+		#posib > .btn( @baseFontSize, @baseLineHeight, #fff );
+		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		#posib > .buttonBackground( lighten( #f89406, 15% ), #f89406 );
+		&.active { color: rgba(255,255,255,.75); }
+	}
+
+	.btn-danger( @baseFontSize: 13px, @baseLineHeight: 18px, @textColor: #333, @bcgColor: #fff ) {
+		#posib > .btn( @baseFontSize, @baseLineHeight, #fff );
+		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		#posib > .buttonBackground( #ee5f5b, #bd362f );
+		&.active { color: rgba(255,255,255,.75); }
+	}
+
+	.btn-success( @baseFontSize: 13px, @baseLineHeight: 18px, @textColor: #333, @bcgColor: #fff ) {
+		#posib > .btn( @baseFontSize, @baseLineHeight, #fff );
+		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		#posib > .buttonBackground( #62c462, #51a351 );
+		&.active { color: rgba(255,255,255,.75); }
+	}
+
+	.btn-info( @baseFontSize: 13px, @baseLineHeight: 18px, @textColor: #333, @bcgColor: #fff ) {
+		#posib > .btn( @baseFontSize, @baseLineHeight, #fff );
+		text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		#posib > .buttonBackground( #5bc0de, #2f96b4 );
+		&.active { color: rgba(255,255,255,.75); }
+	}
+
+	// POPOVER ARROWS
+	// -------------------------
+	// For tipsies and popovers
+	#popoverArrow {
+		.top(@arrowWidth: 5px) {
+			position: absolute;
+		    width: 0;
+		    height: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -@arrowWidth;
+			border-left: @arrowWidth solid transparent;
+			border-right: @arrowWidth solid transparent;
+			border-top: @arrowWidth solid black;
+		}
+		.left(@arrowWidth: 5px) {
+			position: absolute;
+		    width: 0;
+		    height: 0;
+			top: 50%;
+			right: 0;
+			margin-top: -@arrowWidth;
+			border-top: @arrowWidth solid transparent;
+			border-bottom: @arrowWidth solid transparent;
+			border-left: @arrowWidth solid black;
+		}
+		.bottom(@arrowWidth: 5px) {
+			position: absolute;
+		    width: 0;
+		    height: 0;
+			top: 0;
+			left: 50%;
+			margin-left: -@arrowWidth;
+			border-left: @arrowWidth solid transparent;
+			border-right: @arrowWidth solid transparent;
+			border-bottom: @arrowWidth solid black;
+		}
+		.right(@arrowWidth: 5px) {
+			position: absolute;
+		    width: 0;
+		    height: 0;
+			top: 50%;
+			left: 0;
+			margin-top: -@arrowWidth;
+			border-top: @arrowWidth solid transparent;
+			border-bottom: @arrowWidth solid transparent;
+			border-right: @arrowWidth solid black;
+		}
+	}
+
+
+	// FORMS
+	// -----------------------
+	.formStyles() {
+		.posib-field-group {
+			margin-bottom: 18px;
+			#posib > .clearfix();
+			label {
+				#posib > #font > .sans-serif( 13px, normal, 18px );
+				display: block;
+				margin-bottom: 5px;
+				color: #666;
+				float: left;
+				width: 140px;
+				padding-top: 5px;
+				text-align: right;
+				input, select, textarea {
+					display: block;
+				}
+			}
+			.posib-input {
+				margin-left: 160px;
+				input, textarea, select, .uneditable-input {
+					#posib > #font > .sans-serif( 13px, normal, 18px );
+					display: inline-block;
+					width: 210px;
+					height: 18px;
+					padding: 4px;
+					margin-bottom: 9px;
+					font-size: 13px;
+					line-height: 18px;
+					color: #777;
+					background: white;
+					border: 1px solid #ccc;
+					#posib > .border-radius(3px);
+				}
+				.uneditable-textarea {
+					width: auto;
+					height: auto;
+				}
+				// Mini reset for unique input types
+				input[type="image"], input[type="checkbox"], input[type="radio"] {
+					width: auto;
+					height: auto;
+					padding: 0;
+					margin: 3px 0;
+					*margin-top: 0; /* IE7 */
+					line-height: normal;
+					border: 0;
+					cursor: pointer;
+					#posib > .border-radius(0);
+				}
+				// Reset the file input to browser defaults
+				input[type="file"] {
+					padding: initial;
+					line-height: initial;
+					border: initial;
+					background-color: #fff;
+					background-color: initial;
+					#posib > .box-shadow(none);
+				}
+				// Help out input buttons
+				input[type="button"], input[type="reset"], input[type="submit"] {
+					width: auto;
+					height: auto;
+				}
+				// Set the height of select and file controls to match text inputs
+				select, input[type="file"] {
+				  height: 28px; /* In IE7, the height of the select element cannot be changed by height, only font-size */
+				  *margin-top: 4px; /* For IE7, add top margin to align select with labels */
+				  line-height: 28px;
+				}
+				// Chrome on Linux and Mobile Safari need background-color
+				select {
+				  width: 220px; // default input width + 10px of padding that doesn't get applied
+				  background-color: #fff;
+				}
+				// Make multiple select elements height not fixed
+				select[multiple], select[size] {
+					height: auto;
+				}
+				// Remove shadow from image inputs
+				input[type="image"] {
+					#posib > .box-shadow(none);
+				}
+				// Make textarea height behave
+				textarea {
+					height: auto;
+					#posib > .resizable( none );
+				}
+				// Hidden inputs
+				input[type="hidden"] {
+					display: none;
+				}
+				// FOCUS STATE
+				// -----------
+				input, textarea {
+					#posib > .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+					@transition: border linear .2s, box-shadow linear .2s;
+					#posib > .transition(@transition);
+				}
+				input:focus, textarea:focus {
+					border-color: rgba(82,168,236,.8);
+					@shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+					#posib > .box-shadow(@shadow);
+					outline: 0;
+					outline: thin dotted \9; /* IE6-8 */
+				}
+				input[type="file"]:focus, input[type="checkbox"]:focus, select:focus {
+					#posib > .box-shadow(none); // override for file inputs
+					#posib > .tab-focus();
+				}
+				// General classes for quick sizes
+				.posib-mini       { width: 60px; }
+				.posib-small      { width: 90px; }
+				.posib-medium     { width: 150px; }
+				.posib-large      { width: 210px; }
+				.posib-xlarge     { width: 270px; }
+				.posib-xxlarge    { width: 530px; }
+				.posib-number       { width: 60px; text-align: right; }
+				// DISABLED STATE
+				// --------------
+				input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+					background-color: #f5f5f5;
+					border-color: #ddd;
+					cursor: not-allowed;
+				}
+				input[type="checkbox"], input[type="radio"] {
+					margin: 8px 0 0;
+				}
+				#posib > .placeholder( #bbb );
+				.help-block {
+					margin-top: 5px;
+					margin-bottom: 0;
+					color: #999;
+				}
+				.help-inline {
+					display: inline-block;
+					#posib > .ie7-inline-block();
+					margin-bottom: 9px;
+					vertical-align: middle;
+					padding-left: 5px;
+				}
+			}
+		}
+		.posib-block-error {
+			padding: 8px 35px 8px 14px;
+			margin-bottom: 18px;
+			text-shadow: 0 1px 0 rgba(255,255,255,.5);
+			background-color: #fcf8e3;
+			border: 1px solid darken( spin( #fcf8e3, -10 ), 3% );
+			#posib > .border-radius( 4px );
+			background-color: #f2dede;
+	  		border-color: darken( spin( #f2dede, -10 ), 3% );
+	  		color: #b94a48;
+	  		padding-top: 14px;
+	  		padding-bottom: 14px;
+	  		> p, > ul {
+	  			margin-bottom: 0;
+	  		}
+	  		p + p {
+	  			margin-top: 5px;
+	  		}
+		}
+		.posib-config-field-group {
+			label { width: 300px; }
+			.posib-input { margin-left: 320px; }
+		}
+	}
+
+	// IMAGE BOXES
+	// -------------------------
+	.posib-image-box( @size: 150px ) {
+		position: relative;
+		background: #ddd url( /posib/static/images/preview-loader.gif ) center no-repeat;
+		width: @size;
+		height: @size;
+		text-align: center;
+		overflow: hidden;
+		border: 1px solid white;
+		#posib > .border-radius( 2px );
+		#posib > .box-shadow( 0 0 4px rgba( 0, 0, 0, 0.5 ) );
+		img {
+			display: block;
+			margin: 0 auto;
+			cursor: pointer;
+			&.posib-image-tool {
+				position: absolute;
+				background: white;
+				border: 1px solid white;
+				cursor: pointer;
+				display: none;
+				&.posib-image-infos {
+					top: 0;
+					left: 0;
+					padding: 2px 3px 2px 1px;
+					#posib > .border-radius( 0 0 2px 0 );
+					#posib > .box-shadow( 1px 1px 2px rgba( 0, 0, 0, 0.15 ) );
+				}
+				&.posib-image-zoom {
+					bottom: 0;
+					left: 0;
+					padding: 0 2px 3px 2px;
+					#posib > .border-radius( 0 2px 0 0 );
+					#posib > .box-shadow( 1px -1px 2px rgba( 0, 0, 0, 0.15 ) );
+				}
+				&.posib-image-move {
+					top: 0;
+					right: 0;
+					padding: 2px 1px 2px 3px;
+					#posib > .border-radius( 0 0 0 2px );
+					#posib > .box-shadow( -1px 1px 2px rgba( 0, 0, 0, 0.15 ) );
+				}
+				&.posib-image-remove {
+					bottom: 0;
+					right: 0;
+					padding: 2px 1px 1px 3px;
+					#posib > .border-radius( 2px 0 0 0 );
+					#posib > .box-shadow( -1px -1px 2px rgba( 0, 0, 0, 0.15 ) );
+				}
+			}
+		}
+		&:hover {
+			img.posib-image-tool {
+				display: block;
+			}
+		}
+	}
+}

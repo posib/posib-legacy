@@ -1,0 +1,43 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-map.less
+ */
+
+#posib {
+	.editMapStyles() {
+		padding: 15px 15px 5px;
+		.help-block {
+			clear: both;
+			margin: 0 auto 20px;
+			#posib > #font > .sans-serif( 13px, normal, 16px );
+			color: #305B30;
+			strong {
+				font-weight: 600;
+			}
+		}
+		#posib-modal-map {
+			width: auto;
+			height: 250px;
+			margin: 0 auto 15px;
+		}
+		#posib-address-finder {
+			text-align: center;
+			.posib-input {
+				margin: 0 auto;
+				textarea {
+					width: 400px;
+					height: 35px;
+					#posib > .border-radius( 3px 0 0 3px );
+					border-right: 0;
+				}
+				input {
+					#posib > .btn-info();
+					height: 45px;
+					font-size: 14px;
+					#posib > .border-radius( 0 3px 3px 0 );
+				}
+			}
+
+		}
+	}
+}

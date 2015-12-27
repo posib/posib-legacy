@@ -1,0 +1,98 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-image.less
+ */
+
+#posib {
+	.editImageStyles() {
+		.help-block {
+			clear: both;
+			padding: 10px 0 0;
+			#posib > #font > .sans-serif( 11px, normal, 16px );
+			color: #305B30;
+			strong {
+				font-weight: 600;
+			}
+		}
+		div.posib-image-editing-section {
+			h4 {
+				text-transform: uppercase;
+				margin: 0 auto 10px;
+				#posib > #font > .sans-serif( 11px, bold, 15px );
+			}
+			input {
+				display: none;
+			}
+			.posib-image-box {
+				#posib > .posib-image-box;
+			}
+			&.posib-main-image {
+				float: left;
+				width: 155px;
+			}
+			&.posib-gallery-images {
+				float: right;
+				width: 365px;
+				.posib-image-box {
+					#posib > .posib-image-box( 75px );
+					float: left;
+					margin: 0 10px 10px 0;
+				}
+				.posib-add-gallery-image {
+					width: 75px;
+					height: 75px;
+					float: left;
+					margin: 0 10px 10px 0;
+					#posib > .border-radius( 2px );
+					#posib > .box-shadow( 0 0 4px rgba( 0, 0, 0, 0.5 ) );
+					#posib > .buttonBackground( #5bc0de, #2f96b4 );
+					border: 1px solid white;
+					text-align: center;
+					cursor: pointer;
+					position: relative;
+					#posib > .user-select( none );
+					span {
+						text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+						#posib > #font > .sans-serif( 75px, bold, 75px );
+						color: white;
+						cursor: pointer;
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						margin: -46px 0 0 -22px;
+					}
+				}
+			}
+		}
+		section.posib-image-informations {
+			display: none;
+			.posib-image-preview {
+				margin: 0 auto 30px;
+				text-align: center;
+				.posib-image-box {
+					#posib > .posib-image-box;
+					width: 75px;
+					height: 75px;
+					margin: 0 auto;
+				}
+			}
+
+		}
+		.posib-upload-waiter {
+			display: none;
+			text-align: center;
+			margin: 20px auto;
+			p {
+				margin: 5px 0 0;
+				#posib > #font > .sans-serif( 12px, normal, 18px );
+				color: #305B30;
+				strong {
+					display: block;
+					#posib > #font > .sans-serif( 14px, bold, 21px );
+					margin: 0 0 5px;
+				}
+			}
+		}
+	}
+}

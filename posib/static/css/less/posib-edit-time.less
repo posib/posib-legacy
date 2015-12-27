@@ -1,0 +1,91 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-time.less
+ */
+
+#posib {
+	.editTimeStyles() {
+		padding: 15px 15px 5px;
+		div.posib-date-picker {
+			#posib > .clearfix();
+			margin: 0 auto 20px;
+			> div {
+				float: left;
+				&.posib-date {
+					width: 50%;
+					border-right: 1px solid silver;
+					table {
+						border-collapse: separate;
+						border-spacing: 0.25rem;
+						border: 1px solid silver;
+						#posib > .box-shadow( 0 1px 1px white );
+						#posib > .border-radius( 0.75rem );
+						min-width: 50%;
+						margin: 0 auto;
+						tr {
+							td, th {
+								#posib > #font > .sans-serif( 12px, normal, 18px );
+								padding: 0.1rem 0.25rem;
+								text-align: center;
+								border: 1px solid silver;
+								#posib > .box-shadow( 0 1px 1px white );
+							}
+							th {
+								#posib > #font > .sans-serif( 12px, bold, 18px );
+								&.posib-date-month-prev, &.posib-date-month-next {
+									span {
+										#posib > #font > .sans-serif( 24px, bold, 20px );
+									}
+								}
+							}
+						}
+						tbody {
+							tr {
+								&:last-child {
+									td:first-child, th:first-child { #posib > .border-radius( 0 0 0 0.5rem ); }
+									td:last-child, th:last-child { #posib > .border-radius( 0 0 0.5rem 0 ); }
+									td:only-child, th:only-child { #posib > .border-radius( 0 0 0.5rem 0.5rem ); }
+								}
+								td {
+									&.other-month {
+										color: #aaa;
+									}
+									&.today {
+										background: desaturate( lime, 25% );
+									}
+									&:hover {
+										background: silver;
+										cursor: pointer;
+									}
+									&.active, &.active:hover {
+										background: navy;
+										color: white;
+										font-weight: bold;
+									}
+								}
+							}
+						}
+						thead {
+							tr {
+								&:first-child {
+									td:first-child, th:first-child { #posib > .border-radius( 0.5rem 0 0 0 ); }
+									td:last-child, th:last-child { #posib > .border-radius( 0 0.5rem 0 0 ); }
+									td:only-child, th:only-child { #posib > .border-radius( 0.5rem 0.5rem 0 0 ) }
+								}
+								th {
+									&:hover {
+										background: silver;
+										cursor: pointer;
+									}
+								}
+							}
+						}
+					}
+				}
+				&.posib-hour {
+					width: 49%;
+				}
+			}
+		}
+	}
+}

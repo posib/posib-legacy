@@ -1,0 +1,3883 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/styles.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-mixins.less
+ */
+#posib .alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+#posib .alert .posib-alert-heading {
+  font-weight: bold
+		margin: 0 auto 3px;
+}
+#posib .alert .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  line-height: 18px;
+}
+#posib .alert-success {
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+#posib .alert-success,
+#posib .alert-success .posib-alert-heading {
+  color: #468847;
+}
+#posib .alert-danger,
+#posib .alert-error {
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+#posib .alert-danger,
+#posib .alert-error,
+#posib .alert-danger .posib-alert-heading,
+#posib .alert-error .posib-alert-heading {
+  color: #b94a48;
+}
+#posib .alert-info {
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+#posib .alert-info,
+#posib .alert-info .posib-alert-heading {
+  color: #3a87ad;
+}
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-reset.less
+ */
+.posib-reset * {
+  position: static;
+  background: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  float: none;
+  clear: none;
+  color: black;
+}
+.posib-reset h1,
+.posib-reset h2,
+.posib-reset h3,
+.posib-reset h4,
+.posib-reset h5,
+.posib-reset h6,
+.posib-reset p,
+.posib-reset blockquote,
+.posib-reset pre,
+.posib-reset a,
+.posib-reset abbr,
+.posib-reset acronym,
+.posib-reset address,
+.posib-reset cite,
+.posib-reset code,
+.posib-reset del,
+.posib-reset dfn,
+.posib-reset em,
+.posib-reset img,
+.posib-reset q,
+.posib-reset s,
+.posib-reset samp,
+.posib-reset small,
+.posib-reset strike,
+.posib-reset strong,
+.posib-reset sub,
+.posib-reset sup,
+.posib-reset tt,
+.posib-reset var,
+.posib-reset dd,
+.posib-reset dl,
+.posib-reset dt,
+.posib-reset li,
+.posib-reset ol,
+.posib-reset ul,
+.posib-reset fieldset,
+.posib-reset form,
+.posib-reset label,
+.posib-reset legend,
+.posib-reset button,
+.posib-reset table,
+.posib-reset caption,
+.posib-reset tbody,
+.posib-reset tfoot,
+.posib-reset thead,
+.posib-reset tr,
+.posib-reset th,
+.posib-reset td,
+.posib-reset article,
+.posib-reset aside,
+.posib-reset details,
+.posib-reset figcaption,
+.posib-reset figure,
+.posib-reset footer,
+.posib-reset header,
+.posib-reset hgroup,
+.posib-reset nav,
+.posib-reset section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+.posib-reset table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.posib-reset ol,
+.posib-reset ul {
+  list-style: none;
+}
+.posib-reset q:before,
+.posib-reset q:after,
+.posib-reset blockquote:before,
+.posib-reset blockquote:after {
+  content: "";
+}
+.posib-reset a:focus {
+  outline: thin dotted;
+}
+.posib-reset a:hover,
+.posib-reset a:active {
+  outline: 0;
+}
+.posib-reset article,
+.posib-reset aside,
+.posib-reset details,
+.posib-reset figcaption,
+.posib-reset figure,
+.posib-reset footer,
+.posib-reset header,
+.posib-reset hgroup,
+.posib-reset nav,
+.posib-reset section {
+  display: block;
+}
+.posib-reset audio,
+.posib-reset canvas,
+.posib-reset video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.posib-reset audio:not([controls]) {
+  display: none;
+}
+.posib-reset sub,
+.posib-reset sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.posib-reset sup {
+  top: -0.5em;
+}
+.posib-reset sub {
+  bottom: -0.25em;
+}
+.posib-reset img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.posib-reset button,
+.posib-reset input,
+.posib-reset select,
+.posib-reset textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+.posib-reset button,
+.posib-reset input {
+  line-height: normal;
+  *overflow: visible;
+}
+.posib-reset button::-moz-focus-inner,
+.posib-reset input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.posib-reset button,
+.posib-reset input[type="button"],
+.posib-reset input[type="reset"],
+.posib-reset input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+.posib-reset input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.posib-reset input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.posib-reset textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-editor.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-connect.less
+ */
+.posib-connect {
+  position: relative;
+}
+.posib-connect .posib-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+.posib-connect .posib-backdrop.posib-loader {
+  background: rgba(0, 0, 0, 0.8) url(/posib/static/images/loader.gif ) center no-repeat;
+}
+.posib-connect #posib-ie-warning {
+  display: block;
+  position: absolute;
+  z-index: 15000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ee5f5b;
+  background: #bd362f;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.posib-connect #posib-ie-warning div {
+  width: 50%;
+  margin: 0 auto;
+}
+.posib-connect #posib-ie-warning div h4 {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 25px auto 30px;
+  text-align: center;
+}
+.posib-connect #posib-ie-warning div p {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 auto 20px;
+}
+.posib-connect #posib-ie-warning div p a {
+  color: #dca5a4;
+  text-decoration: none;
+}
+.posib-connect #posib-ie-warning div p a:hover {
+  text-decoration: underline;
+  color: #ce817f;
+}
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-modal.less
+ */
+.posib-modal {
+  position: fixed;
+  z-index: 20000;
+  background: white;
+  top: 50%;
+  left: 50%;
+  width: 560px;
+  margin: -250px 0 0 -280px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+}
+.posib-modal form header {
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+}
+.posib-modal form header a.posib-modal-close {
+  float: right;
+  color: #404040;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 13.5px;
+  text-shadow: 0 1px 0 white;
+  text-decoration: none;
+  margin-top: 7px;
+}
+.posib-modal form header h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 36px;
+  color: #444;
+}
+.posib-modal form header h1 img {
+  vertical-align: -1px;
+  margin: 0 5px 0 0;
+}
+.posib-modal form fieldset {
+  padding: 30px 15px 15px;
+  max-height: 350px;
+  overflow: auto;
+  border-bottom: 1px solid #ddd;
+  background: white;
+  padding: 15px 15px 5px;
+  *zoom: 1;
+}
+.posib-modal form fieldset .posib-field-group {
+  margin-bottom: 18px;
+  *zoom: 1;
+}
+.posib-modal form fieldset .posib-field-group:before,
+.posib-modal form fieldset .posib-field-group:after {
+  display: table;
+  content: "";
+}
+.posib-modal form fieldset .posib-field-group:after {
+  clear: both;
+}
+.posib-modal form fieldset .posib-field-group label {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+  float: left;
+  width: 140px;
+  padding-top: 5px;
+  text-align: right;
+}
+.posib-modal form fieldset .posib-field-group label input,
+.posib-modal form fieldset .posib-field-group label select,
+.posib-modal form fieldset .posib-field-group label textarea {
+  display: block;
+}
+.posib-modal form fieldset .posib-field-group .posib-input {
+  margin-left: 160px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input,
+.posib-modal form fieldset .posib-field-group .posib-input textarea,
+.posib-modal form fieldset .posib-field-group .posib-input select,
+.posib-modal form fieldset .posib-field-group .posib-input .uneditable-input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  display: inline-block;
+  width: 210px;
+  height: 18px;
+  padding: 4px;
+  margin-bottom: 9px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #777;
+  background: white;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .uneditable-textarea {
+  width: auto;
+  height: auto;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[type="image"],
+.posib-modal form fieldset .posib-field-group .posib-input input[type="checkbox"],
+.posib-modal form fieldset .posib-field-group .posib-input input[type="radio"] {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 3px 0;
+  *margin-top: 0;
+  /* IE7 */
+
+  line-height: normal;
+  border: 0;
+  cursor: pointer;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[type="file"] {
+  padding: initial;
+  line-height: initial;
+  border: initial;
+  background-color: #fff;
+  background-color: initial;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[type="button"],
+.posib-modal form fieldset .posib-field-group .posib-input input[type="reset"],
+.posib-modal form fieldset .posib-field-group .posib-input input[type="submit"] {
+  width: auto;
+  height: auto;
+}
+.posib-modal form fieldset .posib-field-group .posib-input select,
+.posib-modal form fieldset .posib-field-group .posib-input input[type="file"] {
+  height: 28px;
+  /* In IE7, the height of the select element cannot be changed by height, only font-size */
+
+  *margin-top: 4px;
+  /* For IE7, add top margin to align select with labels */
+
+  line-height: 28px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input select {
+  width: 220px;
+  background-color: #fff;
+}
+.posib-modal form fieldset .posib-field-group .posib-input select[multiple],
+.posib-modal form fieldset .posib-field-group .posib-input select[size] {
+  height: auto;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[type="image"] {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset .posib-field-group .posib-input textarea {
+  height: auto;
+  resize: none;
+  overflow: auto;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[type="hidden"] {
+  display: none;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input,
+.posib-modal form fieldset .posib-field-group .posib-input textarea {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input:focus,
+.posib-modal form fieldset .posib-field-group .posib-input textarea:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-8 */
+
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[type="file"]:focus,
+.posib-modal form fieldset .posib-field-group .posib-input input[type="checkbox"]:focus,
+.posib-modal form fieldset .posib-field-group .posib-input select:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .posib-mini {
+  width: 60px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .posib-small {
+  width: 90px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .posib-medium {
+  width: 150px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .posib-large {
+  width: 210px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .posib-xlarge {
+  width: 270px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .posib-xxlarge {
+  width: 530px;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .posib-number {
+  width: 60px;
+  text-align: right;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[disabled],
+.posib-modal form fieldset .posib-field-group .posib-input select[disabled],
+.posib-modal form fieldset .posib-field-group .posib-input textarea[disabled],
+.posib-modal form fieldset .posib-field-group .posib-input input[readonly],
+.posib-modal form fieldset .posib-field-group .posib-input select[readonly],
+.posib-modal form fieldset .posib-field-group .posib-input textarea[readonly] {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+.posib-modal form fieldset .posib-field-group .posib-input input[type="checkbox"],
+.posib-modal form fieldset .posib-field-group .posib-input input[type="radio"] {
+  margin: 8px 0 0;
+}
+.posib-modal form fieldset .posib-field-group .posib-input :-moz-placeholder {
+  color: #bbbbbb;
+}
+.posib-modal form fieldset .posib-field-group .posib-input ::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .help-block {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #999;
+}
+.posib-modal form fieldset .posib-field-group .posib-input .help-inline {
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  margin-bottom: 9px;
+  vertical-align: middle;
+  padding-left: 5px;
+}
+.posib-modal form fieldset .posib-block-error {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+  color: #b94a48;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.posib-modal form fieldset .posib-block-error > p,
+.posib-modal form fieldset .posib-block-error > ul {
+  margin-bottom: 0;
+}
+.posib-modal form fieldset .posib-block-error p + p {
+  margin-top: 5px;
+}
+.posib-modal form fieldset .posib-config-field-group label {
+  width: 300px;
+}
+.posib-modal form fieldset .posib-config-field-group .posib-input {
+  margin-left: 320px;
+}
+.posib-modal form fieldset .posib-editor {
+  width: 360px;
+  position: relative;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border: 1px solid #ccc;
+  background: silver;
+  padding: 4px;
+  height: 22px;
+  width: 350px;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  background-color: #e2e2e2;
+  background-image: -moz-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: -ms-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e5e5e5), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: -o-linear-gradient(top, #e5e5e5, #dddddd);
+  background-image: linear-gradient(top, #e5e5e5, #dddddd);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dddddd', GradientType=0);
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group {
+  margin: 0 10px 0 0;
+  display: inline-block;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 -1px 1px rgba(255, 255, 255, 0.5);
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a {
+  border-left: 1px solid #bbb;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin: 0;
+  text-indent: -999em;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-bold {
+  background: #eeeeee url(/posib/static/icons/edit-bold.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-italic {
+  background: #eeeeee url(/posib/static/icons/edit-italic.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-underline {
+  background: #eeeeee url(/posib/static/icons/edit-underline.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-ol {
+  background: #eeeeee url(/posib/static/icons/edit-list-order.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-ul {
+  background: #eeeeee url(/posib/static/icons/edit-list.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-indent {
+  background: #eeeeee url(/posib/static/icons/edit-indent.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-outdent {
+  background: #eeeeee url(/posib/static/icons/edit-outdent.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-removeformat {
+  background: #eeeeee url(/posib/static/icons/broom.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-link {
+  background: #eeeeee url(/posib/static/icons/chain.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a.posib-editor-button-unlink {
+  background: #eeeeee url(/posib/static/icons/chain-unchain.png ) center no-repeat;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a:hover {
+  background-color: #f5f5f5;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-toolbar .posib-editor-button-group a:first-child {
+  border: 0;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content {
+  position: relative;
+  z-index: 5;
+  padding: 35px 4px 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #555;
+  border: 1px solid #ccc;
+  height: 100px;
+  overflow: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content:focus {
+  outline: 0;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content p {
+  margin: 0 auto 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content em,
+.posib-modal form fieldset .posib-editor .posib-editor-content i {
+  font-style: italic;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content strong,
+.posib-modal form fieldset .posib-editor .posib-editor-content b {
+  font-weight: bold;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content u {
+  text-decoration: underline;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content ol {
+  list-style: inside decimal;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content ul {
+  list-style: inside disc;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content ol,
+.posib-modal form fieldset .posib-editor .posib-editor-content ul {
+  margin: 5px auto;
+}
+.posib-modal form fieldset .posib-editor .posib-editor-content ol li,
+.posib-modal form fieldset .posib-editor .posib-editor-content ul li {
+  margin: 0 auto 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+}
+.posib-modal form fieldset textarea#posib-content {
+  display: none;
+}
+.posib-modal form fieldset div.posib-field-insert-link {
+  display: none;
+  margin: 0 auto 10px;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls {
+  text-align: center;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  margin: 0 5px 0 0;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.active,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.disabled,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm.active,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm.disabled,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm:hover,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm:active,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm.active,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm.disabled,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm[disabled] {
+  background-color: #51a351;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm:active,
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm.active {
+  background-color: #408140 \9;
+}
+.posib-modal form fieldset div.posib-field-insert-link div.posib-field-insert-link-controls a.posib-field-insert-link-confirm.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.posib-modal form fieldset .help-block {
+  clear: both;
+  padding: 10px 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #305B30;
+}
+.posib-modal form fieldset .help-block strong {
+  font-weight: 600;
+}
+.posib-modal form fieldset div.posib-image-editing-section h4 {
+  text-transform: uppercase;
+  margin: 0 auto 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.posib-modal form fieldset div.posib-image-editing-section input {
+  display: none;
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box {
+  position: relative;
+  background: #dddddd url(/posib/static/images/preview-loader.gif ) center no-repeat;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box img {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box img.posib-image-tool {
+  position: absolute;
+  background: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: none;
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box img.posib-image-tool.posib-image-infos {
+  top: 0;
+  left: 0;
+  padding: 2px 3px 2px 1px;
+  -webkit-border-radius: 0 0 2px 0;
+  -moz-border-radius: 0 0 2px 0;
+  border-radius: 0 0 2px 0;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box img.posib-image-tool.posib-image-zoom {
+  bottom: 0;
+  left: 0;
+  padding: 0 2px 3px 2px;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  border-radius: 0 2px 0 0;
+  -webkit-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box img.posib-image-tool.posib-image-move {
+  top: 0;
+  right: 0;
+  padding: 2px 1px 2px 3px;
+  -webkit-border-radius: 0 0 0 2px;
+  -moz-border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 2px;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box img.posib-image-tool.posib-image-remove {
+  bottom: 0;
+  right: 0;
+  padding: 2px 1px 1px 3px;
+  -webkit-border-radius: 2px 0 0 0;
+  -moz-border-radius: 2px 0 0 0;
+  border-radius: 2px 0 0 0;
+  -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section .posib-image-box:hover img.posib-image-tool {
+  display: block;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-main-image {
+  float: left;
+  width: 155px;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images {
+  float: right;
+  width: 365px;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box {
+  position: relative;
+  background: #dddddd url(/posib/static/images/preview-loader.gif ) center no-repeat;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box img {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box img.posib-image-tool {
+  position: absolute;
+  background: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: none;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box img.posib-image-tool.posib-image-infos {
+  top: 0;
+  left: 0;
+  padding: 2px 3px 2px 1px;
+  -webkit-border-radius: 0 0 2px 0;
+  -moz-border-radius: 0 0 2px 0;
+  border-radius: 0 0 2px 0;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box img.posib-image-tool.posib-image-zoom {
+  bottom: 0;
+  left: 0;
+  padding: 0 2px 3px 2px;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  border-radius: 0 2px 0 0;
+  -webkit-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box img.posib-image-tool.posib-image-move {
+  top: 0;
+  right: 0;
+  padding: 2px 1px 2px 3px;
+  -webkit-border-radius: 0 0 0 2px;
+  -moz-border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 2px;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box img.posib-image-tool.posib-image-remove {
+  bottom: 0;
+  right: 0;
+  padding: 2px 1px 1px 3px;
+  -webkit-border-radius: 2px 0 0 0;
+  -moz-border-radius: 2px 0 0 0;
+  border-radius: 2px 0 0 0;
+  -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-image-box:hover img.posib-image-tool {
+  display: block;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin: 0 10px 10px 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 1px solid white;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image:hover,
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image:active,
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image.active,
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image.disabled,
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image[disabled] {
+  background-color: #2f96b4;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image:active,
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image.active {
+  background-color: #24748c \9;
+}
+.posib-modal form fieldset div.posib-image-editing-section.posib-gallery-images .posib-add-gallery-image span {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 75px;
+  font-weight: bold;
+  line-height: 75px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -46px 0 0 -22px;
+}
+.posib-modal form fieldset section.posib-image-informations {
+  display: none;
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview {
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box {
+  position: relative;
+  background: #dddddd url(/posib/static/images/preview-loader.gif ) center no-repeat;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box img {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box img.posib-image-tool {
+  position: absolute;
+  background: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: none;
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box img.posib-image-tool.posib-image-infos {
+  top: 0;
+  left: 0;
+  padding: 2px 3px 2px 1px;
+  -webkit-border-radius: 0 0 2px 0;
+  -moz-border-radius: 0 0 2px 0;
+  border-radius: 0 0 2px 0;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box img.posib-image-tool.posib-image-zoom {
+  bottom: 0;
+  left: 0;
+  padding: 0 2px 3px 2px;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  border-radius: 0 2px 0 0;
+  -webkit-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box img.posib-image-tool.posib-image-move {
+  top: 0;
+  right: 0;
+  padding: 2px 1px 2px 3px;
+  -webkit-border-radius: 0 0 0 2px;
+  -moz-border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 2px;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box img.posib-image-tool.posib-image-remove {
+  bottom: 0;
+  right: 0;
+  padding: 2px 1px 1px 3px;
+  -webkit-border-radius: 2px 0 0 0;
+  -moz-border-radius: 2px 0 0 0;
+  border-radius: 2px 0 0 0;
+  -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset section.posib-image-informations .posib-image-preview .posib-image-box:hover img.posib-image-tool {
+  display: block;
+}
+.posib-modal form fieldset .posib-upload-waiter {
+  display: none;
+  text-align: center;
+  margin: 20px auto;
+}
+.posib-modal form fieldset .posib-upload-waiter p {
+  margin: 5px 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #305B30;
+}
+.posib-modal form fieldset .posib-upload-waiter p strong {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 0 0 5px;
+}
+.posib-modal form fieldset .help-block {
+  clear: both;
+  margin: 0 auto 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 16px;
+  color: #305B30;
+}
+.posib-modal form fieldset .help-block strong {
+  font-weight: 600;
+}
+.posib-modal form fieldset #posib-modal-map {
+  width: auto;
+  height: 250px;
+  margin: 0 auto 15px;
+}
+.posib-modal form fieldset #posib-address-finder {
+  text-align: center;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input {
+  margin: 0 auto;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input textarea {
+  width: 400px;
+  height: 35px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  border-right: 0;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  height: 45px;
+  font-size: 14px;
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input.active,
+.posib-modal form fieldset #posib-address-finder .posib-input input:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input.disabled,
+.posib-modal form fieldset #posib-address-finder .posib-input input[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input:hover,
+.posib-modal form fieldset #posib-address-finder .posib-input input:active,
+.posib-modal form fieldset #posib-address-finder .posib-input input.active,
+.posib-modal form fieldset #posib-address-finder .posib-input input.disabled,
+.posib-modal form fieldset #posib-address-finder .posib-input input[disabled] {
+  background-color: #2f96b4;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input:active,
+.posib-modal form fieldset #posib-address-finder .posib-input input.active {
+  background-color: #24748c \9;
+}
+.posib-modal form fieldset #posib-address-finder .posib-input input.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.posib-modal form fieldset .posib-input #posib-file-input {
+  display: none;
+}
+.posib-modal form fieldset .posib-input #posib-file-fileinfos {
+  margin: 0 0 5px;
+  width: 270px;
+  border: 1px solid silver;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 2px 4px;
+  background: #f5f5f5 url(/posib/static/icons/document-text.png ) 4px 50% no-repeat;
+  *zoom: 1;
+}
+.posib-modal form fieldset .posib-input #posib-file-fileinfos:before,
+.posib-modal form fieldset .posib-input #posib-file-fileinfos:after {
+  display: table;
+  content: "";
+}
+.posib-modal form fieldset .posib-input #posib-file-fileinfos:after {
+  clear: both;
+}
+.posib-modal form fieldset .posib-input #posib-file-fileinfos.empty {
+  display: none;
+}
+.posib-modal form fieldset .posib-input #posib-file-fileinfos strong {
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 5px 0 0 20px;
+  float: left;
+  width: 200px;
+}
+.posib-modal form fieldset .posib-input #posib-file-fileinfos strong span {
+  color: gray;
+  font-weight: normal;
+}
+.posib-modal form fieldset .posib-input #posib-file-fileinfos small {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 16px;
+  float: right;
+  text-align: right;
+  height: 16px;
+  margin: 6px 2px 0 0;
+}
+.posib-modal form fieldset .posib-input #posib-file-button {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #49afcd;
+  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+  background-image: linear-gradient(top, #5bc0de, #2f96b4);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+  border-color: #2f96b4 #2f96b4 #1f6377;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  width: 258px;
+}
+.posib-modal form fieldset .posib-input #posib-file-button:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset .posib-input #posib-file-button:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset .posib-input #posib-file-button:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset .posib-input #posib-file-button.active,
+.posib-modal form fieldset .posib-input #posib-file-button:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset .posib-input #posib-file-button.disabled,
+.posib-modal form fieldset .posib-input #posib-file-button[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset .posib-input #posib-file-button:hover,
+.posib-modal form fieldset .posib-input #posib-file-button:active,
+.posib-modal form fieldset .posib-input #posib-file-button.active,
+.posib-modal form fieldset .posib-input #posib-file-button.disabled,
+.posib-modal form fieldset .posib-input #posib-file-button[disabled] {
+  background-color: #2f96b4;
+}
+.posib-modal form fieldset .posib-input #posib-file-button:active,
+.posib-modal form fieldset .posib-input #posib-file-button.active {
+  background-color: #24748c \9;
+}
+.posib-modal form fieldset .posib-input #posib-file-button.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.posib-modal form fieldset div.posib-date-picker {
+  *zoom: 1;
+  margin: 0 auto 20px;
+}
+.posib-modal form fieldset div.posib-date-picker:before,
+.posib-modal form fieldset div.posib-date-picker:after {
+  display: table;
+  content: "";
+}
+.posib-modal form fieldset div.posib-date-picker:after {
+  clear: both;
+}
+.posib-modal form fieldset div.posib-date-picker > div {
+  float: left;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date {
+  width: 50%;
+  border-right: 1px solid silver;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table {
+  border-collapse: separate;
+  border-spacing: 0.25rem;
+  border: 1px solid silver;
+  -webkit-box-shadow: 0 1px 1px #ffffff;
+  -moz-box-shadow: 0 1px 1px #ffffff;
+  box-shadow: 0 1px 1px #ffffff;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  border-radius: 0.75rem;
+  min-width: 50%;
+  margin: 0 auto;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tr td,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tr th {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0.1rem 0.25rem;
+  text-align: center;
+  border: 1px solid silver;
+  -webkit-box-shadow: 0 1px 1px #ffffff;
+  -moz-box-shadow: 0 1px 1px #ffffff;
+  box-shadow: 0 1px 1px #ffffff;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tr th {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tr th.posib-date-month-prev span,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tr th.posib-date-month-next span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 20px;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr:last-child td:first-child,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr:last-child th:first-child {
+  -webkit-border-radius: 0 0 0 0.5rem;
+  -moz-border-radius: 0 0 0 0.5rem;
+  border-radius: 0 0 0 0.5rem;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr:last-child td:last-child,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr:last-child th:last-child {
+  -webkit-border-radius: 0 0 0.5rem 0;
+  -moz-border-radius: 0 0 0.5rem 0;
+  border-radius: 0 0 0.5rem 0;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr:last-child td:only-child,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr:last-child th:only-child {
+  -webkit-border-radius: 0 0 0.5rem 0.5rem;
+  -moz-border-radius: 0 0 0.5rem 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr td.other-month {
+  color: #aaa;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr td.today {
+  background: #20df20;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr td:hover {
+  background: silver;
+  cursor: pointer;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr td.active,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table tbody tr td.active:hover {
+  background: navy;
+  color: white;
+  font-weight: bold;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table thead tr:first-child td:first-child,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table thead tr:first-child th:first-child {
+  -webkit-border-radius: 0.5rem 0 0 0;
+  -moz-border-radius: 0.5rem 0 0 0;
+  border-radius: 0.5rem 0 0 0;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table thead tr:first-child td:last-child,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table thead tr:first-child th:last-child {
+  -webkit-border-radius: 0 0.5rem 0 0;
+  -moz-border-radius: 0 0.5rem 0 0;
+  border-radius: 0 0.5rem 0 0;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table thead tr:first-child td:only-child,
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table thead tr:first-child th:only-child {
+  -webkit-border-radius: 0.5rem 0.5rem 0 0;
+  -moz-border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-date table thead tr th:hover {
+  background: silver;
+  cursor: pointer;
+}
+.posib-modal form fieldset div.posib-date-picker > div.posib-hour {
+  width: 49%;
+}
+.posib-modal form fieldset dl.history-manager {
+  border-left: 3px solid silver;
+  margin: 30px 0 10px 40px;
+  padding: 20px 0 40px 20px;
+  position: relative;
+}
+.posib-modal form fieldset dl.history-manager:before {
+  content: "maintenant";
+  padding: 2px 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  text-shadow: 0 -1px 1px #808080;
+  color: white;
+  background: silver;
+  width: 74px;
+  text-align: center;
+  position: absolute;
+  left: -37px;
+  top: -20px;
+}
+.posib-modal form fieldset dl.history-manager:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: -15px;
+  background: transparent url(/posib/static/images/fader.png ) top left;
+}
+.posib-modal form fieldset dl.history-manager dt {
+  display: block;
+  -webkit-border-radius: 25px 0 0 25px;
+  -moz-border-radius: 25px 0 0 25px;
+  border-radius: 25px 0 0 25px;
+  background: silver;
+  text-align: center;
+  padding: 2px 5px 2px 20px;
+  border: 3px solid white;
+  border-right: 0;
+  width: 100px;
+  position: relative;
+  left: -35px;
+}
+.posib-modal form fieldset dl.history-manager dt span {
+  text-shadow: 0 -1px 1px #808080;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.posib-modal form fieldset dl.history-manager dt:after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  -webkit-box-shadow: inset 0 1px 1px #808080;
+  -moz-box-shadow: inset 0 1px 1px #808080;
+  box-shadow: inset 0 1px 1px #808080;
+}
+.posib-modal form fieldset dl.history-manager dd {
+  border: 3px solid silver;
+  padding: 5px;
+  -webkit-border-radius: 0 5px 5px 5px;
+  -moz-border-radius: 0 5px 5px 5px;
+  border-radius: 0 5px 5px 5px;
+  position: relative;
+  top: -25px;
+  left: 92px;
+  width: 500px;
+  min-height: 30px;
+  margin: 0 0 10px;
+  background: white;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content {
+  margin: 5px 5px 0;
+  *zoom: 1;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content:before,
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content:after {
+  display: table;
+  content: "";
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content:after {
+  clear: both;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image {
+  float: left;
+  width: 140px;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image h4 {
+  text-transform: uppercase;
+  margin: 0 auto 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box {
+  position: relative;
+  background: #dddddd url(/posib/static/images/preview-loader.gif ) center no-repeat;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 120px;
+  height: 120px;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box img {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box img.posib-image-tool {
+  position: absolute;
+  background: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: none;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box img.posib-image-tool.posib-image-infos {
+  top: 0;
+  left: 0;
+  padding: 2px 3px 2px 1px;
+  -webkit-border-radius: 0 0 2px 0;
+  -moz-border-radius: 0 0 2px 0;
+  border-radius: 0 0 2px 0;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box img.posib-image-tool.posib-image-zoom {
+  bottom: 0;
+  left: 0;
+  padding: 0 2px 3px 2px;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  border-radius: 0 2px 0 0;
+  -webkit-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box img.posib-image-tool.posib-image-move {
+  top: 0;
+  right: 0;
+  padding: 2px 1px 2px 3px;
+  -webkit-border-radius: 0 0 0 2px;
+  -moz-border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 2px;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box img.posib-image-tool.posib-image-remove {
+  bottom: 0;
+  right: 0;
+  padding: 2px 1px 1px 3px;
+  -webkit-border-radius: 2px 0 0 0;
+  -moz-border-radius: 2px 0 0 0;
+  border-radius: 2px 0 0 0;
+  -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-main-image .posib-image-box:hover img.posib-image-tool {
+  display: block;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images h4 {
+  text-transform: uppercase;
+  margin: 0 auto 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box {
+  position: relative;
+  background: #dddddd url(/posib/static/images/preview-loader.gif ) center no-repeat;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box img {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box img.posib-image-tool {
+  position: absolute;
+  background: white;
+  border: 1px solid white;
+  cursor: pointer;
+  display: none;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box img.posib-image-tool.posib-image-infos {
+  top: 0;
+  left: 0;
+  padding: 2px 3px 2px 1px;
+  -webkit-border-radius: 0 0 2px 0;
+  -moz-border-radius: 0 0 2px 0;
+  border-radius: 0 0 2px 0;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box img.posib-image-tool.posib-image-zoom {
+  bottom: 0;
+  left: 0;
+  padding: 0 2px 3px 2px;
+  -webkit-border-radius: 0 2px 0 0;
+  -moz-border-radius: 0 2px 0 0;
+  border-radius: 0 2px 0 0;
+  -webkit-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box img.posib-image-tool.posib-image-move {
+  top: 0;
+  right: 0;
+  padding: 2px 1px 2px 3px;
+  -webkit-border-radius: 0 0 0 2px;
+  -moz-border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 2px;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box img.posib-image-tool.posib-image-remove {
+  bottom: 0;
+  right: 0;
+  padding: 2px 1px 1px 3px;
+  -webkit-border-radius: 2px 0 0 0;
+  -moz-border-radius: 2px 0 0 0;
+  border-radius: 2px 0 0 0;
+  -webkit-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.15);
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-gallery-images ul li.posib-image-box:hover img.posib-image-tool {
+  display: block;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-content .posib-restored-map {
+  height: 150px;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools {
+  text-align: right;
+  margin: 10px auto 5px;
+  padding: 10px 7px 0;
+  border-top: 1px dotted silver;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a.active,
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a.disabled,
+.posib-modal form fieldset dl.history-manager dd div.posib-history-tools a[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset div.posib-success-block {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.posib-modal form fieldset div.posib-success-block img {
+  vertical-align: -2px;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset div.posib-warning-block {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+.posib-modal form fieldset div.posib-warning-block img {
+  vertical-align: -2px;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset div.posib-info-block {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.posib-modal form fieldset div.posib-info-block img {
+  vertical-align: -2px;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset div.posib-reorder-info {
+  display: none;
+}
+.posib-modal form fieldset ul.posib-input.posib-multilang-choice li {
+  display: inline;
+}
+.posib-modal form fieldset ul.posib-input.posib-multilang-choice li label {
+  display: inline;
+  width: auto;
+  margin: -4px 10px 0 0;
+  cursor: pointer;
+}
+.posib-modal form fieldset ul.posib-input.posib-multilang-choice li label * {
+  cursor: pointer;
+}
+.posib-modal form fieldset ul.posib-input.posib-multilang-choice li label img {
+  margin: 0 0 0 2px;
+}
+.posib-modal form fieldset ul.posib-root-users,
+.posib-modal form fieldset ul.posib-sitemap {
+  margin: 0 auto;
+}
+.posib-modal form fieldset ul.posib-root-users li,
+.posib-modal form fieldset ul.posib-sitemap li {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -o-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: linear-gradient(top, #ffffff, #f3f3f3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+  padding: 5px 10px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px;
+  text-align: left;
+  position: relative;
+  cursor: default;
+}
+.posib-modal form fieldset ul.posib-root-users li:first-child,
+.posib-modal form fieldset ul.posib-sitemap li:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset ul.posib-root-users li:hover,
+.posib-modal form fieldset ul.posib-sitemap li:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset ul.posib-root-users li:focus,
+.posib-modal form fieldset ul.posib-sitemap li:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset ul.posib-root-users li.active,
+.posib-modal form fieldset ul.posib-sitemap li.active,
+.posib-modal form fieldset ul.posib-root-users li:active,
+.posib-modal form fieldset ul.posib-sitemap li:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset ul.posib-root-users li.disabled,
+.posib-modal form fieldset ul.posib-sitemap li.disabled,
+.posib-modal form fieldset ul.posib-root-users li[disabled],
+.posib-modal form fieldset ul.posib-sitemap li[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset ul.posib-root-users li img,
+.posib-modal form fieldset ul.posib-sitemap li img {
+  vertical-align: middle;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset ul.posib-root-users li span.posib-user-name,
+.posib-modal form fieldset ul.posib-sitemap li span.posib-user-name,
+.posib-modal form fieldset ul.posib-root-users li span.posib-page-name,
+.posib-modal form fieldset ul.posib-sitemap li span.posib-page-name {
+  display: inline-block;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.posib-modal form fieldset ul.posib-root-users li span.posib-page-url,
+.posib-modal form fieldset ul.posib-sitemap li span.posib-page-url {
+  position: absolute;
+  left: 225px;
+  top: 7px;
+  color: gray;
+  padding: 0 0 0 22px;
+  line-height: 16px;
+  display: inline-block;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: transparent url(/posib/static/icons/document-globe.png ) center left no-repeat;
+}
+.posib-modal form fieldset ul.posib-root-users li span.posib-page-template,
+.posib-modal form fieldset ul.posib-sitemap li span.posib-page-template {
+  position: absolute;
+  left: 400px;
+  top: 7px;
+  color: gray;
+  padding: 0 0 0 22px;
+  line-height: 16px;
+  display: inline-block;
+  width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: transparent url(/posib/static/icons/pencil-ruler.png ) center left no-repeat;
+}
+.posib-modal form fieldset ul.posib-root-users li span.posib-tools,
+.posib-modal form fieldset ul.posib-sitemap li span.posib-tools {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  text-align: right;
+}
+.posib-modal form fieldset ul.posib-root-users li span.posib-tools a,
+.posib-modal form fieldset ul.posib-sitemap li span.posib-tools a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.posib-modal form fieldset ul.posib-root-users li span.posib-tools a img,
+.posib-modal form fieldset ul.posib-sitemap li span.posib-tools a img {
+  margin: 0;
+}
+.posib-modal form fieldset ul.posib-root-users li:hover,
+.posib-modal form fieldset ul.posib-sitemap li:hover {
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -o-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: linear-gradient(top, #ffffff, #f3f3f3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+  background-position: 0;
+}
+.posib-modal form fieldset ul.posib-root-users li:active,
+.posib-modal form fieldset ul.posib-sitemap li:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: inherit;
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add {
+  background-color: #7ec77e;
+  background-image: -moz-linear-gradient(top, #87d287, #6fb86f);
+  background-image: -ms-linear-gradient(top, #87d287, #6fb86f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#87d287), to(#6fb86f));
+  background-image: -webkit-linear-gradient(top, #87d287, #6fb86f);
+  background-image: -o-linear-gradient(top, #87d287, #6fb86f);
+  background-image: linear-gradient(top, #87d287, #6fb86f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87d287', endColorstr='#6fb86f', GradientType=0);
+  border-color: #6fb86f #6fb86f #499249;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: pointer;
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add.active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add.active,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add.disabled,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add.disabled,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add.disabled,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add.disabled,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add[disabled],
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add[disabled],
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add[disabled],
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add[disabled] {
+  background-color: #6fb86f;
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add.active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add.active {
+  background-color: #51a351 \9;
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add span.posib-user-name,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add span.posib-user-name,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add span.posib-user-name,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add span.posib-user-name,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add span.posib-page-name,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add span.posib-page-name,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add span.posib-page-name,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add span.posib-page-name {
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover {
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover:hover,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover:hover,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover:hover,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover:hover,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover.active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover.active,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover.disabled,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover.disabled,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover.disabled,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover.disabled,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover[disabled],
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover[disabled],
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover[disabled],
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover[disabled] {
+  background-color: #51a351;
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:hover.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:hover.active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:hover.active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:hover.active {
+  background-color: #408140 \9;
+}
+.posib-modal form fieldset ul.posib-root-users li.posib-user-add:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-user-add:active,
+.posib-modal form fieldset ul.posib-root-users li.posib-page-add:active,
+.posib-modal form fieldset ul.posib-sitemap li.posib-page-add:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #42b142;
+  background-color: #3b9e3b \9;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  color: white;
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm {
+  display: none;
+  margin: 0 auto 10px;
+}
+.posib-modal form fieldset div.posib-mono-confirm p {
+  margin: 0 auto 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.posib-modal form fieldset div.posib-mono-confirm div {
+  text-align: center;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  margin: 0 5px 0 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.active,
+.posib-modal form fieldset div.posib-mono-confirm div a:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.disabled,
+.posib-modal form fieldset div.posib-mono-confirm div a[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(top, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#bd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.disabled,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:hover,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.disabled,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm[disabled] {
+  background-color: #bd362f;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active {
+  background-color: #942a25 \9;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.posib-modal form fieldset div.posib-edit-user {
+  display: none;
+}
+.posib-modal form fieldset div.posib-edit-page {
+  display: none;
+}
+.posib-modal form fieldset h4.system_infos {
+  margin: 0 auto 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #444;
+  text-align: center;
+}
+.posib-modal form fieldset h4.system_infos a {
+  text-decoration: none;
+}
+.posib-modal form fieldset h4.system_infos small {
+  display: block;
+  color: silver;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 16px;
+}
+.posib-modal form fieldset dl.changelog {
+  margin: 0 auto 10px;
+}
+.posib-modal form fieldset dl.changelog dt {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 0 auto 5px;
+}
+.posib-modal form fieldset dl.changelog dt strong {
+  color: #555;
+}
+.posib-modal form fieldset dl.changelog dt small {
+  color: #999;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 16px;
+}
+.posib-modal form fieldset dl.changelog dd {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 16px;
+  margin: 0 auto 14px;
+  border-bottom: 1px dotted silver;
+}
+.posib-modal form fieldset dl.changelog dd p {
+  color: #777;
+  margin: 0 auto 8px;
+}
+.posib-modal form fieldset dl.changelog dd p span {
+  padding: 1px 3px 2px;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  background-color: silver;
+  margin: 0 3px 0 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.posib-modal form fieldset dl.changelog dd p span.new {
+  background-color: green;
+}
+.posib-modal form fieldset dl.changelog dd p span.bug {
+  background-color: orange;
+}
+.posib-modal form fieldset dl.changelog dd p span.int {
+  background-color: gray;
+}
+.posib-modal form fieldset dl.changelog dd p span.dgn {
+  background-color: navy;
+}
+.posib-modal form fieldset div.posib-success-block {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  color: #468847;
+}
+.posib-modal form fieldset div.posib-success-block img {
+  vertical-align: -2px;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset div.posib-warning-block {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+.posib-modal form fieldset div.posib-warning-block img {
+  vertical-align: -2px;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset div.posib-info-block {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  color: #3a87ad;
+}
+.posib-modal form fieldset div.posib-info-block img {
+  vertical-align: -2px;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset div.posib-reorder-info {
+  display: none;
+}
+.posib-modal form fieldset ul.posib-list-elements {
+  margin: 0 auto;
+}
+.posib-modal form fieldset ul.posib-list-elements li {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -o-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: linear-gradient(top, #ffffff, #f3f3f3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+  padding: 5px 10px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px;
+  text-align: left;
+  position: relative;
+  cursor: default;
+}
+.posib-modal form fieldset ul.posib-list-elements li:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset ul.posib-list-elements li:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset ul.posib-list-elements li:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset ul.posib-list-elements li.active,
+.posib-modal form fieldset ul.posib-list-elements li:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset ul.posib-list-elements li.disabled,
+.posib-modal form fieldset ul.posib-list-elements li[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset ul.posib-list-elements li img {
+  vertical-align: middle;
+  margin: 0 3px 0 0;
+}
+.posib-modal form fieldset ul.posib-list-elements li span.posib-element-name {
+  display: inline-block;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.posib-modal form fieldset ul.posib-list-elements li span.posib-tools {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  text-align: right;
+}
+.posib-modal form fieldset ul.posib-list-elements li span.posib-tools a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.posib-modal form fieldset ul.posib-list-elements li span.posib-tools a img {
+  margin: 0;
+}
+.posib-modal form fieldset ul.posib-list-elements li span.posib-tools a.posib-list-element-tools-move {
+  cursor: move;
+}
+.posib-modal form fieldset ul.posib-list-elements li:hover {
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -ms-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f3f3f3));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: -o-linear-gradient(top, #ffffff, #f3f3f3);
+  background-image: linear-gradient(top, #ffffff, #f3f3f3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f3f3f3', GradientType=0);
+  background-position: 0;
+}
+.posib-modal form fieldset ul.posib-list-elements li:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: inherit;
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add {
+  background-color: #7ec77e;
+  background-image: -moz-linear-gradient(top, #87d287, #6fb86f);
+  background-image: -ms-linear-gradient(top, #87d287, #6fb86f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#87d287), to(#6fb86f));
+  background-image: -webkit-linear-gradient(top, #87d287, #6fb86f);
+  background-image: -o-linear-gradient(top, #87d287, #6fb86f);
+  background-image: linear-gradient(top, #87d287, #6fb86f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#87d287', endColorstr='#6fb86f', GradientType=0);
+  border-color: #6fb86f #6fb86f #499249;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: pointer;
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:active,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add.active,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add.disabled,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add[disabled] {
+  background-color: #6fb86f;
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:active,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add.active {
+  background-color: #51a351 \9;
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add span.posib-element-name {
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover {
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover:hover,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover:active,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover.active,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover.disabled,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover[disabled] {
+  background-color: #51a351;
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover:active,
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:hover.active {
+  background-color: #408140 \9;
+}
+.posib-modal form fieldset ul.posib-list-elements li.posib-list-element-add:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #42b142;
+  background-color: #3b9e3b \9;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  color: white;
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm {
+  display: none;
+  margin: 0 auto 10px;
+}
+.posib-modal form fieldset div.posib-mono-confirm p {
+  margin: 0 auto 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+}
+.posib-modal form fieldset div.posib-mono-confirm div {
+  text-align: center;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  margin: 0 5px 0 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.active,
+.posib-modal form fieldset div.posib-mono-confirm div a:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.disabled,
+.posib-modal form fieldset div.posib-mono-confirm div a[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #da4f49;
+  background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -ms-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f));
+  background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: -o-linear-gradient(top, #ee5f5b, #bd362f);
+  background-image: linear-gradient(top, #ee5f5b, #bd362f);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#bd362f', GradientType=0);
+  border-color: #bd362f #bd362f #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:first-child {
+  *margin-left: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.disabled,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:hover,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.disabled,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm[disabled] {
+  background-color: #bd362f;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm:active,
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active {
+  background-color: #942a25 \9;
+}
+.posib-modal form fieldset div.posib-mono-confirm div a.posib-mono-confirm-confirm.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.posib-modal form fieldset:before,
+.posib-modal form fieldset:after {
+  display: table;
+  content: "";
+}
+.posib-modal form fieldset:after {
+  clear: both;
+}
+.posib-modal form section.posib-modals-tools {
+  background: #eee;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #ddd;
+  padding: 6px 15px;
+  *zoom: 1;
+  position: relative;
+}
+.posib-modal form section.posib-modals-tools:before,
+.posib-modal form section.posib-modals-tools:after {
+  display: table;
+  content: "";
+}
+.posib-modal form section.posib-modals-tools:after {
+  clear: both;
+}
+.posib-modal form section.posib-modals-tools a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  color: #666;
+  padding: 6px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.posib-modal form section.posib-modals-tools a img {
+  vertical-align: -3px;
+  margin-right: 5px;
+}
+.posib-modal form section.posib-modals-tools a:hover {
+  background: white;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+}
+.posib-modal form section.posib-modals-tools a.posib-modal-list {
+  position: absolute;
+  top: 6px;
+  right: 15px;
+}
+.posib-modal form footer {
+  min-height: 30px;
+  border-top: 1px solid white;
+  padding: 5px 15px;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  background-color: #d6d6d6;
+  background-image: -moz-linear-gradient(top, #dddddd, #cccccc);
+  background-image: -ms-linear-gradient(top, #dddddd, #cccccc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dddddd), to(#cccccc));
+  background-image: -webkit-linear-gradient(top, #dddddd, #cccccc);
+  background-image: -o-linear-gradient(top, #dddddd, #cccccc);
+  background-image: linear-gradient(top, #dddddd, #cccccc);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#cccccc', GradientType=0);
+  position: relative;
+}
+.posib-modal form footer .posib-branding {
+  width: 220px;
+  height: 56px;
+}
+.posib-modal form footer .posib-branding a {
+  display: block;
+  width: 220px;
+  height: 56px;
+  text-indent: -999em;
+}
+.posib-modal form footer .posib-branding#brand_posib a {
+  background: transparent url(/posib/static/images/branding-posib.png ) center left no-repeat;
+}
+.posib-modal form footer .posib-branding#brand_minibos a {
+  background: transparent url(/posib/static/images/branding-minibos.png ) center left no-repeat;
+}
+.posib-modal form footer .posib-controls {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin: -14px 0 0;
+}
+.posib-modal form footer .posib-controls a,
+.posib-modal form footer .posib-controls input {
+  float: right;
+  margin-left: 15px;
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+}
+.posib-modal form footer .posib-controls a:first-child,
+.posib-modal form footer .posib-controls input:first-child {
+  *margin-left: 0;
+}
+.posib-modal form footer .posib-controls a:hover,
+.posib-modal form footer .posib-controls input:hover {
+  color: #333333;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form footer .posib-controls a:focus,
+.posib-modal form footer .posib-controls input:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form footer .posib-controls a.active,
+.posib-modal form footer .posib-controls input.active,
+.posib-modal form footer .posib-controls a:active,
+.posib-modal form footer .posib-controls input:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form footer .posib-controls a.disabled,
+.posib-modal form footer .posib-controls input.disabled,
+.posib-modal form footer .posib-controls a[disabled],
+.posib-modal form footer .posib-controls input[disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form footer .posib-controls input[type="submit"] {
+  display: inline-block;
+  padding: 4px 10px 4px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  background-color: #fafafa;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(25%, #ffffff), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -moz-linear-gradient(top, #ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -ms-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: -o-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-image: linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+  border: 1px solid #ccc;
+  border-bottom-color: #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  *margin-left: .3em;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #5bb75b;
+  background-image: -moz-linear-gradient(top, #62c462, #51a351);
+  background-image: -ms-linear-gradient(top, #62c462, #51a351);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351));
+  background-image: -webkit-linear-gradient(top, #62c462, #51a351);
+  background-image: -o-linear-gradient(top, #62c462, #51a351);
+  background-image: linear-gradient(top, #62c462, #51a351);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+  border-color: #51a351 #51a351 #387038;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.posib-modal form footer .posib-controls input[type="submit"]:first-child {
+  *margin-left: 0;
+}
+.posib-modal form footer .posib-controls input[type="submit"]:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #e6e6e6;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -ms-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+.posib-modal form footer .posib-controls input[type="submit"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.posib-modal form footer .posib-controls input[type="submit"].active,
+.posib-modal form footer .posib-controls input[type="submit"]:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+.posib-modal form footer .posib-controls input[type="submit"].disabled,
+.posib-modal form footer .posib-controls input[type="submit"][disabled] {
+  cursor: default;
+  background-image: none;
+  background-color: #e6e6e6;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.posib-modal form footer .posib-controls input[type="submit"]:hover,
+.posib-modal form footer .posib-controls input[type="submit"]:active,
+.posib-modal form footer .posib-controls input[type="submit"].active,
+.posib-modal form footer .posib-controls input[type="submit"].disabled,
+.posib-modal form footer .posib-controls input[type="submit"][disabled] {
+  background-color: #51a351;
+}
+.posib-modal form footer .posib-controls input[type="submit"]:active,
+.posib-modal form footer .posib-controls input[type="submit"].active {
+  background-color: #408140 \9;
+}
+.posib-modal form footer .posib-controls input[type="submit"].active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.posib-modal.posib-modal-map-edit,
+.posib-modal.posib-modal-time-edit,
+.posib-modal.posib-modal-restore,
+.posib-modal.posib-modal-sitemap {
+  width: 720px;
+  margin: -300px 0 0 -360px;
+}
+.posib-modal.posib-modal-map-edit form fieldset,
+.posib-modal.posib-modal-time-edit form fieldset,
+.posib-modal.posib-modal-restore form fieldset,
+.posib-modal.posib-modal-sitemap form fieldset {
+  max-height: 450px;
+  overflow: auto;
+}
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-editable.less
+ */
+.posib-admin {
+  position: relative;
+}
+.posib-admin .posib-backdrop {
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+.posib-admin .posib-backdrop.posib-loader {
+  background: rgba(0, 0, 0, 0.8) url(/posib/static/images/loader.gif ) center no-repeat;
+}
+.posib-admin .posib-editable-hover {
+  background: rgba(200, 0, 0, 0.25);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 15000;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.posib-admin .posib-editable-hover div {
+  position: absolute;
+  width: 240px;
+  height: 90px;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -120px;
+  background: transparent url(/posib/static/images/editable-zone.png ) center no-repeat;
+}
+.posib-admin .posib-editable-hover div > strong {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  display: block;
+  width: 200px;
+  height: 25px;
+  padding: 0 0 0 23px;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+  color: #666;
+}
+.posib-admin .posib-editable-hover div > strong.short {
+  background: transparent url(/posib/static/icons/edit-small-caps.png ) center left no-repeat;
+}
+.posib-admin .posib-editable-hover div > strong.rich {
+  background: transparent url(/posib/static/icons/edit-alignment.png ) center left no-repeat;
+}
+.posib-admin .posib-editable-hover div > strong.image {
+  background: transparent url(/posib/static/icons/image.png ) center left no-repeat;
+}
+.posib-admin .posib-editable-hover div > strong.form {
+  background: transparent url(/posib/static/icons/application-form.png ) center left no-repeat;
+}
+.posib-admin .posib-editable-hover div > strong.map {
+  background: transparent url(/posib/static/icons/map-pin.png ) center left no-repeat;
+}
+.posib-admin .posib-editable-hover div > strong.time {
+  background: transparent url(/posib/static/icons/calendar-month.png ) center left no-repeat;
+}
+.posib-admin .posib-editable-hover div > strong.file {
+  background: transparent url(/posib/static/icons/drive-download.png ) center left no-repeat;
+}
+.posib-admin .posib-editable-hover div > small {
+  display: none;
+}
+.posib-admin .posib-editable-hover div > span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: block;
+  width: 220px;
+  height: 25px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 25px;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.posib-admin .posib-editable-hover div.list {
+  height: 115px;
+  background: transparent url(/posib/static/images/editable-list-zone.png ) center no-repeat;
+}
+.posib-admin .posib-editable-hover div.list > small {
+  position: absolute;
+  bottom: 35px;
+  left: 20px;
+  display: block;
+  width: 220px;
+  height: 25px;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 25px;
+  color: #222;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  padding: 1px 0 0 23px;
+  background: transparent url(/posib/static/icons/category.png ) center left no-repeat;
+}
+.posib-admin .tooltip {
+  position: absolute;
+  z-index: 50000;
+  display: block;
+  visibility: visible;
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.posib-admin .tooltip * {
+  position: static;
+  background: transparent;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  float: none;
+  clear: none;
+  color: black;
+}
+.posib-admin .tooltip h1,
+.posib-admin .tooltip h2,
+.posib-admin .tooltip h3,
+.posib-admin .tooltip h4,
+.posib-admin .tooltip h5,
+.posib-admin .tooltip h6,
+.posib-admin .tooltip p,
+.posib-admin .tooltip blockquote,
+.posib-admin .tooltip pre,
+.posib-admin .tooltip a,
+.posib-admin .tooltip abbr,
+.posib-admin .tooltip acronym,
+.posib-admin .tooltip address,
+.posib-admin .tooltip cite,
+.posib-admin .tooltip code,
+.posib-admin .tooltip del,
+.posib-admin .tooltip dfn,
+.posib-admin .tooltip em,
+.posib-admin .tooltip img,
+.posib-admin .tooltip q,
+.posib-admin .tooltip s,
+.posib-admin .tooltip samp,
+.posib-admin .tooltip small,
+.posib-admin .tooltip strike,
+.posib-admin .tooltip strong,
+.posib-admin .tooltip sub,
+.posib-admin .tooltip sup,
+.posib-admin .tooltip tt,
+.posib-admin .tooltip var,
+.posib-admin .tooltip dd,
+.posib-admin .tooltip dl,
+.posib-admin .tooltip dt,
+.posib-admin .tooltip li,
+.posib-admin .tooltip ol,
+.posib-admin .tooltip ul,
+.posib-admin .tooltip fieldset,
+.posib-admin .tooltip form,
+.posib-admin .tooltip label,
+.posib-admin .tooltip legend,
+.posib-admin .tooltip button,
+.posib-admin .tooltip table,
+.posib-admin .tooltip caption,
+.posib-admin .tooltip tbody,
+.posib-admin .tooltip tfoot,
+.posib-admin .tooltip thead,
+.posib-admin .tooltip tr,
+.posib-admin .tooltip th,
+.posib-admin .tooltip td,
+.posib-admin .tooltip article,
+.posib-admin .tooltip aside,
+.posib-admin .tooltip details,
+.posib-admin .tooltip figcaption,
+.posib-admin .tooltip figure,
+.posib-admin .tooltip footer,
+.posib-admin .tooltip header,
+.posib-admin .tooltip hgroup,
+.posib-admin .tooltip nav,
+.posib-admin .tooltip section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+.posib-admin .tooltip table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.posib-admin .tooltip ol,
+.posib-admin .tooltip ul {
+  list-style: none;
+}
+.posib-admin .tooltip q:before,
+.posib-admin .tooltip q:after,
+.posib-admin .tooltip blockquote:before,
+.posib-admin .tooltip blockquote:after {
+  content: "";
+}
+.posib-admin .tooltip a:focus {
+  outline: thin dotted;
+}
+.posib-admin .tooltip a:hover,
+.posib-admin .tooltip a:active {
+  outline: 0;
+}
+.posib-admin .tooltip article,
+.posib-admin .tooltip aside,
+.posib-admin .tooltip details,
+.posib-admin .tooltip figcaption,
+.posib-admin .tooltip figure,
+.posib-admin .tooltip footer,
+.posib-admin .tooltip header,
+.posib-admin .tooltip hgroup,
+.posib-admin .tooltip nav,
+.posib-admin .tooltip section {
+  display: block;
+}
+.posib-admin .tooltip audio,
+.posib-admin .tooltip canvas,
+.posib-admin .tooltip video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+.posib-admin .tooltip audio:not([controls]) {
+  display: none;
+}
+.posib-admin .tooltip sub,
+.posib-admin .tooltip sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.posib-admin .tooltip sup {
+  top: -0.5em;
+}
+.posib-admin .tooltip sub {
+  bottom: -0.25em;
+}
+.posib-admin .tooltip img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.posib-admin .tooltip button,
+.posib-admin .tooltip input,
+.posib-admin .tooltip select,
+.posib-admin .tooltip textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+.posib-admin .tooltip button,
+.posib-admin .tooltip input {
+  line-height: normal;
+  *overflow: visible;
+}
+.posib-admin .tooltip button::-moz-focus-inner,
+.posib-admin .tooltip input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.posib-admin .tooltip button,
+.posib-admin .tooltip input[type="button"],
+.posib-admin .tooltip input[type="reset"],
+.posib-admin .tooltip input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+.posib-admin .tooltip input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.posib-admin .tooltip input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.posib-admin .tooltip textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+.posib-admin .tooltip.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.posib-admin .tooltip.top {
+  margin-top: -2px;
+}
+.posib-admin .tooltip.right {
+  margin-left: 2px;
+}
+.posib-admin .tooltip.bottom {
+  margin-top: 2px;
+}
+.posib-admin .tooltip.left {
+  margin-left: -2px;
+}
+.posib-admin .tooltip.top .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000000;
+}
+.posib-admin .tooltip.left .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #000000;
+}
+.posib-admin .tooltip.bottom .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000000;
+}
+.posib-admin .tooltip.right .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid #000000;
+}
+.posib-admin .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 13px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.posib-admin .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-image.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-map.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-time.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-edit-file.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-history-manager.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-root.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-about.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-list.less
+ */
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-toolbar.less
+ */
+.posib-admin {
+  position: relative;
+}
+.posib-admin .posib-toolbar {
+  width: 240px;
+  height: 90px;
+  position: fixed;
+  z-index: 20000;
+  bottom: 20px;
+  left: 20px;
+  background: url(/posib/static/images/toolbar.png ) top left no-repeat;
+}
+.posib-admin .posib-toolbar .posib-branding {
+  position: absolute;
+  width: 220px;
+  height: 45px;
+  top: 10px;
+  left: 10px;
+}
+.posib-admin .posib-toolbar .posib-branding a {
+  display: block;
+  width: 220px;
+  height: 45px;
+  text-indent: -999em;
+}
+.posib-admin .posib-toolbar .posib-branding#brand_posib a {
+  background: transparent url(/posib/static/images/branding-posib.png ) center left no-repeat;
+}
+.posib-admin .posib-toolbar .posib-branding#brand_minibos a {
+  background: transparent url(/posib/static/images/branding-minibos.png ) center left no-repeat;
+}
+.posib-admin .posib-toolbar .posib-tools {
+  position: absolute;
+  width: 220px;
+  height: 25px;
+  bottom: 10px;
+  left: 10px;
+  text-align: right;
+}
+.posib-admin .posib-toolbar .posib-tools a {
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 25px;
+  margin: 0 10px 0 0;
+}
+.posib-admin .posib-toolbar .posib-tools a img {
+  vertical-align: middle;
+}
+.posib-admin .posib-toolbar .posib-tools a#posib-lang {
+  position: absolute;
+  bottom: 1px;
+  left: 10px;
+}
+.posib-admin .posib-toolbar .posib-tools ul#posib-lang-switcher {
+  display: none;
+  position: absolute;
+  bottom: -2px;
+  left: 4px;
+  padding: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.66);
+}
+.posib-admin .posib-toolbar .posib-tools ul#posib-lang-switcher li a {
+  line-height: 24px;
+  vertical-align: middle;
+  margin: 0 3px;
+}

@@ -1,0 +1,78 @@
+/* Posib - CMSimple
+ * by flatLand!
+ * LESS File - /static/css/less/posib-toolbar.less
+ */
+
+.posib-admin {
+	position: relative;
+	.posib-toolbar {
+		width: 240px;
+		height: 90px;
+		position: fixed;
+		z-index: 20000;
+		bottom: 20px;
+		left: 20px;
+		background: url( /posib/static/images/toolbar.png ) top left no-repeat;
+		.posib-branding {
+			position: absolute;
+			width: 220px;
+			height: 45px;
+			top: 10px;
+			left: 10px;
+			a {
+				display: block;
+				width: 220px;
+				height: 45px;
+				text-indent: -999em;
+			}
+			&#brand_posib {
+				a {
+					background: transparent url( /posib/static/images/branding-posib.png ) center left no-repeat;
+				}
+			}
+			&#brand_minibos {
+				a {
+					background: transparent url( /posib/static/images/branding-minibos.png ) center left no-repeat;
+				}
+			}
+		}
+		.posib-tools {
+			position: absolute;
+			width: 220px;
+			height: 25px;
+			bottom: 10px;
+			left: 10px;
+			text-align: right;
+			a {
+				text-decoration: none;
+				cursor: pointer;
+				line-height: 25px;
+				margin: 0 10px 0 0;
+				img {
+					vertical-align: middle;
+				}
+				&#posib-lang {
+					position: absolute;
+					bottom: 1px;
+					left: 10px;
+				}
+			}
+			ul#posib-lang-switcher {
+				display: none;
+				position: absolute;
+				bottom: -2px;
+				left: 4px;
+				padding: 3px;
+				#posib > .border-radius( 5px );
+				background: rgba( 0, 0, 0, 0.66 );
+				li {
+					a {
+						line-height: 24px;
+						vertical-align: middle;
+						margin: 0 3px;
+					}
+				}
+			}
+		}
+	}
+}
