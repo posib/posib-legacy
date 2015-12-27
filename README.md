@@ -10,6 +10,8 @@ Note that, even if the current code are running in production for many sites, it
 
 The only purpose of this code is to serve as _proof of concept_, demo and base of the **posib.** CMS before rewriting it, in `node.js` with my students.
 
+**NOTE:** this is old code. Needs a lot of refactoring.
+
 ## Run project
 
 ### with docker
