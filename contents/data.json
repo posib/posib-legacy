@@ -1,0 +1,37 @@
+{
+    "bricks": {},
+    "config": {
+        "brand": "posib",
+        "public": {
+            "disable_js": false,
+            "enable_sitemap": false
+        }
+    },
+    "pages": {
+        "contact.html": {
+            "name": "contact",
+            "template": "contact.html"
+        },
+        "gallery.html": {
+            "name": "galeries",
+            "template": "gallery.html"
+        },
+        "index.html": {
+            "name": "accueil",
+            "template": "index.html"
+        },
+        "page.html": {
+            "name": "contenu",
+            "template": "page.html"
+        }
+    },
+    "sitemap": [
+        "index.html",
+        "gallery.html",
+        "page.html",
+        "contact.html"
+    ],
+    "users": {
+        "demo": "89e495e7941cf9e40e6980d14a16bf023ccd4c91"
+    }
+}

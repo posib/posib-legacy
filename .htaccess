@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteRule ^posib/static/(images|icons|css|js)/(.*)$ posib.php [QSA,L]
+
+	RewriteRule ^$ posib.php [QSA,L]
+	RewriteRule ^(\w{2})/$ posib.php [QSA,L]
+	RewriteRule ^(.*\.html)$ posib.php [QSA,L]
+	RewriteRule ^(robots\.txt)$ posib.php [QSA,L]
+	RewriteRule ^admin/(.*)$ posib.php [QSA,L]
+	RewriteRule ^form/(.*)/$ posib.php [QSA,L]
+</IfModule>
